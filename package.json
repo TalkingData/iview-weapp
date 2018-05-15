@@ -6,7 +6,9 @@
   "directories": {
     "example": "example"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "gulp --gulpfile build/build.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:iview/iview-weapp.git"
@@ -21,12 +23,12 @@
   ],
   "homepage": "https://github.com/iview/iview-weapp",
   "devDependencies": {
+    "eslint": "^3.19.0",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.3",
     "gulp-less": "^4.0.0",
     "gulp-rename": "^1.2.2",
-    "less": "^2.7.3",
-    "eslint": "^3.19.0"
+    "gulp-util": "^3.0.8",
+    "less": "^2.7.3"
   }
 }
