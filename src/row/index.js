@@ -1,5 +1,5 @@
 Component({
-    externalClasses: ['row-class'],
+    externalClasses: ['i-class'],
 
     relations: {
         '../col/index': {

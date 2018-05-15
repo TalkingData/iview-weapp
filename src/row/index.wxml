@@ -1,1 +1,1 @@
-<view class="row-class i-row"><slot></slot></view>
+<view class="i-class i-row"><slot></slot></view>

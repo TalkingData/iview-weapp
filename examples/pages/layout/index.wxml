@@ -1,0 +1,14 @@
+<i-row i-class="row-class">
+    <i-col span="8" i-class="col-class">col-8</i-col>
+    <i-col span="8" i-class="col-class light">col-8</i-col>
+    <i-col span="8" i-class="col-class">col-8</i-col>
+</i-row>
+
+<i-row i-class="row-class">
+    <i-col span="4" i-class="col-class">col-4</i-col>
+    <i-col span="10" offset="4" i-class="col-class">col-10 offset-4</i-col>
+</i-row>
+
+<i-row i-class="row-class">
+    <i-col span="12" offset="12" i-class="col-class">col-12 offset-12</i-col>
+</i-row>

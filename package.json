@@ -7,7 +7,8 @@
     "example": "example"
   },
   "scripts": {
-    "build": "gulp --gulpfile build/build.js"
+    "dev": "gulp --gulpfile build/build-dev.js",
+    "build": "gulp --gulpfile build/build-prod.js"
   },
   "repository": {
     "type": "git",
