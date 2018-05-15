@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/panel/index",
     "pages/grid/index",
     "pages/layout/index"
   ],
