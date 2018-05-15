@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/grid/index",
     "pages/layout/index"
   ],
   "window": {

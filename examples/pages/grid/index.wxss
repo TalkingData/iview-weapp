@@ -1,0 +1,14 @@
+.row-class{
+    background: #fff;
+}
+.col-class{
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+    background: #2d8cf0;
+    font-size: 12px;
+}
+.col-class.light{
+    background: #5cadff;
+}

@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "Grid 栅格",
+  "navigationBarTitleText": "Layout 布局",
   "usingComponents": {
     "i-row": "../../dist/row/index",
     "i-col": "../../dist/col/index"

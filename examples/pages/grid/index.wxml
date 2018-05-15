@@ -1,0 +1,12 @@
+<i-grid>
+    <i-grid-item>
+        <i-grid-icon>
+            <image src="../images/icon-vip.png" />
+        </i-grid-icon>
+        <i-grid-label>Grid</i-grid-label>
+    </i-grid-item>
+    <i-grid-item>2</i-grid-item>
+    <i-grid-item>3</i-grid-item>
+    <i-grid-item wx:if="{{ isAdd }}">4</i-grid-item>
+</i-grid>
+<button bindtap="handleAdd">add</button>
