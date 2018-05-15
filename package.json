@@ -1,0 +1,32 @@
+{
+  "name": "iview-weapp",
+  "version": "0.0.1",
+  "description": "高质量微信小程序 UI 组件库",
+  "main": "app.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:iview/iview-weapp.git"
+  },
+  "author": "Aresn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iview/iview-weapp/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/iview/iview-weapp",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-less": "^4.0.0",
+    "gulp-rename": "^1.2.2",
+    "less": "^2.7.3",
+    "eslint": "^3.19.0"
+  }
+}
