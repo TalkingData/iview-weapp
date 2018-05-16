@@ -3,7 +3,6 @@
 
 .i-card {
     margin: 0 16px;
-    padding: 6px 16px;
     font-size: @size-font-base;
     overflow: hidden;
     position: relative;
@@ -20,7 +19,7 @@
 
     &-header{
         display: flex;
-        width: 100%;
+        padding: 6px 16px;
         align-items: center;
 
         &-content{
@@ -54,10 +53,21 @@
     }
 
     &-body{
-        overflow: hidden;
-        border-top-width: 1px;
+        position: relative;
+        padding: 6px 16px;
+        color: @text-color;
+        font-size: @size-font-base;
+
         &::before{
             .hairline();
+            border-top-width: 1px;
         }
+    }
+
+    &-footer{
+        position: relative;
+        padding: 6px 16px;
+        color: @subsidiary-color;
+        font-size: @size-font-small;
     }
 }

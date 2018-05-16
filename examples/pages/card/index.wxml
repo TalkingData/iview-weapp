@@ -5,4 +5,5 @@
 
 <i-card title="卡片标题" extra="额外内容" thumb="https://img.yzcdn.cn/upload_files/2016/11/25/FpqPXlrMRjKwJs8VdTu3ZDJCj4j5.jpeg?imageView2/2/w/200/h/200/q/90/format/jpeg">
     <view slot="content">内容不错</view>
+    <view slot="footer">尾部内容</view>
 </i-card>
