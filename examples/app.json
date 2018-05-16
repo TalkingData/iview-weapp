@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/card/index",
     "pages/list/index",
     "pages/panel/index",
     "pages/grid/index",

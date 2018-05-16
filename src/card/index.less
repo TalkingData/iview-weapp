@@ -1,0 +1,63 @@
+@import "../styles/_base.less";
+@import "../styles/_mixins.less";
+
+.i-card {
+    margin: 0 16px;
+    padding: 6px 16px;
+    font-size: @size-font-base;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border: 1px solid @border-color-base;
+    border-radius: 3px;
+
+    &-full{
+        margin: 0;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    &-header{
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        &-content{
+            flex: 1;
+            text-align: left;
+        }
+
+        &-thumb{
+            display: inline-block;
+            width: 64px;
+            height: 64px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+            background-size: cover;
+            vertical-align: middle;
+        }
+        &-title{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: @size-font-base;
+            color: @title-color;
+        }
+        &-extra{
+            flex: 1;
+            text-align: right;
+            font-size: @size-font-base;
+            color: @subsidiary-color;
+        }
+    }
+
+    &-body{
+        overflow: hidden;
+        border-top-width: 1px;
+        &::before{
+            .hairline();
+        }
+    }
+}
