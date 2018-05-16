@@ -6,7 +6,11 @@ Component({
             type: String,
             value: ''
         },
-        // 内容区顶部是否取消边框
+        // 标题顶部距离
+        hideTop: {
+            type: Boolean,
+            value: false
+        },
         hideBorder: {
             type: Boolean,
             value: false

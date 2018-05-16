@@ -1,4 +1,4 @@
-<i-panel class="panel-example">
+<i-panel class="panel-example" title="标题" hide-top>
     <view style="padding: 15px;">PANEL 内容区域</view>
 </i-panel>
 
