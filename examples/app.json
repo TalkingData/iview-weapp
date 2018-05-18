@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/button/index",
     "pages/card/index",
     "pages/list/index",
     "pages/panel/index",

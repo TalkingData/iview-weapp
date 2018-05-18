@@ -1,0 +1,25 @@
+<i-button bindclick="handleClick">默认按钮</i-button>
+<i-button bindclick="handleClick" type="error" long="true">默认按钮</i-button>
+<i-button bindclick="handleClick" type="primary">默认按钮</i-button>
+<i-button bindclick="handleClick" type="ghost">默认按钮</i-button>
+<i-button bindclick="handleClick" type="info">默认按钮</i-button>
+<i-button bindclick="handleClick" type="success">默认按钮</i-button>
+<i-button bindclick="handleClick" type="warning">默认按钮</i-button>
+<i-button bindclick="handleClick" type="error">默认按钮</i-button>
+
+<i-button bindclick="handleClick" type="primary" size="large">默认按钮</i-button>
+<i-button bindclick="handleClick" type="primary" size="default">默认按钮</i-button>
+<i-button bindclick="handleClick" type="primary" size="small">默认按钮</i-button>
+
+<i-button bindclick="handleClick" type="success" shape="circle" size="large">默认按钮</i-button>
+<i-button bindclick="handleClick" type="success" shape="circle">默认按钮</i-button>
+<i-button bindclick="handleClick" type="success" shape="circle" size="small">默认按钮</i-button>
+
+<i-button bindclick="handleClick" type="primary" loading="true">加载中按钮</i-button>
+
+<i-button bindclick="handleClick" type="primary" disabled>默认按钮</i-button>
+<i-button bindclick="handleClick" type="ghost" disabled>默认按钮</i-button>
+<i-button bindclick="handleClick" type="info" disabled>默认按钮</i-button>
+<i-button bindclick="handleClick" type="success" disabled>默认按钮</i-button>
+<i-button bindclick="handleClick" type="warning" disabled>默认按钮</i-button>
+<i-button bindclick="handleClick" type="error" disabled>默认按钮</i-button>

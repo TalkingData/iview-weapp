@@ -2,7 +2,7 @@ Component({
     externalClasses: ['i-class'],
 
     properties: {
-        // default, primary, ghost, dashed, text, info, success, warning, error
+        // default, primary, ghost, info, success, warning, error
         type: {
             type: String,
             value: '',
@@ -24,6 +24,10 @@ Component({
         loading: {
             type: Boolean,
             value: false,
+        },
+        long: {
+            type: Boolean,
+            value: false
         }
     },
 

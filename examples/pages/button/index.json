@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Button 按钮",
+  "usingComponents": {
+    "i-button": "../../dist/button/index"
+  }
+}

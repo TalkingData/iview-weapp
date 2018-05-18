@@ -1,1 +1,1 @@
-<button class="i-class i-btn {{ 'i-btn-size-' + size }} {{ 'i-btn-type-' + type }} {{ loading ? 'i-btn-loading' : '' }} {{ disabled ? 'i-btn-disabled' : ''}}" bindtap="handleTap"><slot></slot></button>
+<button class="i-class i-btn {{ long ? 'i-btn-long' : '' }} {{ 'i-btn-' + size }} {{ 'i-btn-' + type }} {{ 'i-btn-' + shape }} {{ loading ? 'i-btn-loading' : '' }} {{ disabled ? 'i-btn-disabled' : ''}}" bindtap="handleTap"><view class="i-btn-loading-inner" wx:if="{{loading}}"></view><slot></slot></button>
