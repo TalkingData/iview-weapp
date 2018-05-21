@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Drawer 抽屉",
+  "usingComponents": {
+    "i-radio": "../../dist/drawer/index"
+  }
+}

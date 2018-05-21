@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "InputNumber 数字输入框",
+  "usingComponents": {
+    "i-radio": "../../dist/input-number/index"
+  }
+}

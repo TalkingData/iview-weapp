@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Badge 徽章",
+  "usingComponents": {
+    "i-radio": "../../dist/badge/index"
+  }
+}

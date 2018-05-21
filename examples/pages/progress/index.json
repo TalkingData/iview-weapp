@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Progress 进度条",
+  "usingComponents": {
+    "i-radio": "../../dist/progress/index"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Radio 单选",
+  "usingComponents": {
+    "i-radio": "../../dist/radio/index"
+  }
+}

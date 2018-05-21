@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Switch 开关",
+  "usingComponents": {
+    "i-radio": "../../dist/switch/index"
+  }
+}

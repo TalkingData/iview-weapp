@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Rate 评分",
+  "usingComponents": {
+    "i-radio": "../../dist/rate/index"
+  }
+}

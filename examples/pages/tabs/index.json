@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Tabs 标签页",
+  "usingComponents": {
+    "i-radio": "../../dist/tabs/index"
+  }
+}
