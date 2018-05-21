@@ -1,0 +1,4 @@
+Component({
+    externalClasses: ['i-class'],
+
+});
