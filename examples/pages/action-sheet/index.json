@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "ActionSheet 行动按钮",
   "usingComponents": {
-    "i-radio": "../../dist/action-sheet/index"
+    "i-action-sheet": "../../dist/action-sheet/index"
   }
 }

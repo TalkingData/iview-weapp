@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Checkbox 复选",
   "usingComponents": {
-    "i-radio": "../../dist/checkbox/index"
+    "i-checkbox": "../../dist/checkbox/index"
   }
 }

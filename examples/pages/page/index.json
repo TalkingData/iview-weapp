@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Page 分页",
   "usingComponents": {
-    "i-radio": "../../dist/page/index"
+    "i-page": "../../dist/page/index"
   }
 }

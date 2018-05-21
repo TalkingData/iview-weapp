@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Tag 标签",
   "usingComponents": {
-    "i-radio": "../../dist/tag/index"
+    "i-tag": "../../dist/tag/index"
   }
 }

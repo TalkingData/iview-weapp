@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Message 全局提醒",
   "usingComponents": {
-    "i-radio": "../../dist/message/index"
+    "i-message": "../../dist/message/index"
   }
 }

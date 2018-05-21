@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Avatar 头像",
   "usingComponents": {
-    "i-radio": "../../dist/avatar/index"
+    "i-avatar": "../../dist/avatar/index"
   }
 }

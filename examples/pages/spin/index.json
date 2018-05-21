@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Spin 加载中",
   "usingComponents": {
-    "i-radio": "../../dist/spin/index"
+    "i-spin": "../../dist/spin/index"
   }
 }

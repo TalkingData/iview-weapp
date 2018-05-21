@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Modal 对话框",
   "usingComponents": {
-    "i-radio": "../../dist/modal/index"
+    "i-modal": "../../dist/modal/index"
   }
 }

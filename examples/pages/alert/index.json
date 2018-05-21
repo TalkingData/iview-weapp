@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "Alert 警告提示",
   "usingComponents": {
-    "i-radio": "../../dist/alert/index"
+    "i-alert": "../../dist/alert/index"
   }
 }
