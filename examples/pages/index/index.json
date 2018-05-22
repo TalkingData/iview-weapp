@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "iView Weapp",
+  "usingComponents": {
+    "i-panel": "../../dist/panel/index",
+    "i-cell-group": "../../dist/cell-group/index",
+    "i-cell": "../../dist/cell/index"
+  }
+}
