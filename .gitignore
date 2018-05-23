@@ -20,4 +20,5 @@ examples/dist/
 dist/
 yarn-error.log
 test/unit/coverage
+examples/project.config.json
 .vscode
