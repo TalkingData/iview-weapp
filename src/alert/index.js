@@ -30,7 +30,7 @@ Component({
         iconClasses: '',
         iconType: '',
     },
-    ready() {
+    attached() {
         this.initCls();
         this.iconType();
     },
