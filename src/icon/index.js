@@ -2,17 +2,15 @@ Component({
     externalClasses: ['i-class'],
 
     properties: {
-        // circle || square
-        shape: {
+        type: {
             type: String,
-            value: 'circle'
+            value: ''
         },
-        // small || large || default
         size: {
-            type: String,
-            value: 'default'
+            type: Number,
+            value: 14
         },
-        src: {
+        color: {
             type: String,
             value: ''
         }

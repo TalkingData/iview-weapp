@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -12,9 +12,9 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
-	"appid": "wx307a52ca028d3c07",
+	"appid": "touristappid",
 	"projectname": "iview-weapp",
-	"isGameTourist": false,
+	"isGameTourist": true,
 	"condition": {
 		"search": {
 			"current": -1,

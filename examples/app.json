@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/index/index",
+    "pages/icon/index",
+    "pages/color/index",
     "pages/button/index",
     "pages/card/index",
     "pages/list/index",

@@ -1,0 +1,10 @@
+.icon-item{
+    display: block;
+    padding: 16px 0;
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.icon-item-name{
+    font-size: 10px;
+}

@@ -1,3 +1,12 @@
-<view class="i-class ">
-
+<view class="i-class {{wrapClasses}}" wx:if="{{!closed}}">
+    <view wx:if="{{showIcon}}" class="{{iconClasses}}">
+        <i-icon type="{{iconType}}" size="{{desc?24:16}}"></i-icon>
+    </view>
+    <slot></slot>
+    <view class="i-alert-desc">
+        <slot name="desc"></slot>
+    </view>
+    <view class="i-alert-close" wx:if="{{ closable }}" bindtap="handleTap">
+        <i-icon type="close"></i-icon>
+    </view>
 </view>

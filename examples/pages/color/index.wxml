@@ -1,0 +1,113 @@
+<i-panel title="主色"></i-panel>
+<i-row>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item primary">
+                <view class="color-item-title">Primary</view>
+                <view class="color-item-content">#2d8cf0</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item light-primary">
+                <view class="color-item-title">Light Primary</view>
+                <view class="color-item-content">#5cadff</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item dark-primary">
+                <view class="color-item-title">Dark Primary</view>
+                <view class="color-item-content">#2b85e4</view>
+            </view>
+        </i-card>
+    </i-col>
+</i-row>
+<i-panel title="辅助色"></i-panel>
+<i-row>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item success">
+                <view class="color-item-title">Success</view>
+                <view class="color-item-content">#19be6b</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item warning">
+                <view class="color-item-title">Warning</view>
+                <view class="color-item-content">#ff9900</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item error">
+                <view class="color-item-title">Error</view>
+                <view class="color-item-content">#ed3f14</view>
+            </view>
+        </i-card>
+    </i-col>
+</i-row>
+<i-panel title="中性色"></i-panel>
+<i-row>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item title">
+                <view class="color-item-title">标题 Title</view>
+                <view class="color-item-content">#1c2438</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item content">
+                <view class="color-item-title">正文 Content</view>
+                <view class="color-item-content">#495060</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item sub-color">
+                <view class="color-item-title">辅助 Sub Color</view>
+                <view class="color-item-content">#ed3f14</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item disabled">
+                <view class="color-item-title">失效 Disabled</view>
+                <view class="color-item-content">#bbbec4</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item border dark">
+                <view class="color-item-title">边框 Border</view>
+                <view class="color-item-content">#dddee1</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item divider dark">
+                <view class="color-item-title">分割线 Divider</view>
+                <view class="color-item-content">#e9eaec</view>
+            </view>
+        </i-card>
+    </i-col>
+    <i-col i-class="color-col" span="12">
+        <i-card i-class="color">
+            <view slot="content" class="color-item background dark">
+                <view class="color-item-title">背景 Background</view>
+                <view class="color-item-content">#f8f8f9</view>
+            </view>
+        </i-card>
+    </i-col>
+</i-row>
