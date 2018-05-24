@@ -1,10 +1,10 @@
 <view class="i-class {{classes}}">
-    <view wx:if="{{dot}}">
+    <block wx:if="{{dot}}">
     	<slot></slot>
     	<view class="{{dotClasses}}"></view>
-    </view>
-    <view wx:else>
+    </block>
+    <block wx:else>
     	<slot></slot>
     	<view class="{{countClasses}} i-class-alone">{{finalCount}}</view>
-    </view>
+    </block>
 </view>
