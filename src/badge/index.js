@@ -49,7 +49,7 @@ Component({
         },
         finalCount() {
             this.setData({
-                finalCount: Number(this.data.count) >= Number(this.data.overflowCount) ? `${this.data.overflowCount}+` : this.data.count
+                finalCount: parseInt(this.data.count) >= parseInt(this.data.overflowCount) ? `${this.data.overflowCount}+` : this.data.count
             });
         },
     }
