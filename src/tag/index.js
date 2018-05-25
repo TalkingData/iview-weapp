@@ -32,9 +32,6 @@ Component({
             value : 'dot'
         } 
     },
-    data : {
-        clickChecked : false
-    },
     methods : {
         tapTag(){
             const data = this.data;
