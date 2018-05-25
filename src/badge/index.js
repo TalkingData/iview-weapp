@@ -2,6 +2,7 @@ const prefixCls = 'i-badge';
 
 Component({
     externalClasses: ['i-class', 'i-class-alone'],
+
     properties: {
         count: {
             type: Number,
