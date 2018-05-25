@@ -1,0 +1,19 @@
+.container {
+    margin: 10px;
+}
+
+.demo {
+    margin: 20px;
+}
+
+.demo-badge {
+    width: 42px;
+    height: 42px;
+    background: #eee;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.demo-badge-alone {
+    background: #5cb85c!important;
+}

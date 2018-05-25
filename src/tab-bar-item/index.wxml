@@ -1,0 +1,9 @@
+<view class="i-class i-tab-bar-item">
+    <i-badge dot="{{ dot }}" count="{{ dot ? 0 : count }}">
+        <view bindtap="handleClickItem">
+            <i-icon i-class="i-tab-bar-item-icon {{ current ? 'item-index--i-tab-bar-item-icon-current' : '' }}" color="{{ current ? currentColor : '' }}" type="{{ current ? currentIcon : icon }}" size="22"></i-icon>
+            <view class="i-tab-bar-item-title {{ current ? 'i-tab-bar-item-title-current' : '' }}" wx:if="{{ current && currentColor }}" style="color: {{ currentColor }}">{{ title }}</view>
+            <view class="i-tab-bar-item-title {{ current ? 'i-tab-bar-item-title-current' : '' }}" wx:else>{{ title }}</view>
+        </view>
+    </i-badge>
+</view>
