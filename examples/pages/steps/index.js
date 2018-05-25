@@ -9,6 +9,5 @@ Page({
         this.setData({
             'current' : current
         })
-        console.log( this.data.current,1111111 )
-    }  
+    }
 });
