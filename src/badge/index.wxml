@@ -1,10 +1,5 @@
 <view class="i-class {{classes}}">
-    <block wx:if="{{dot}}">
-    	<slot></slot>
-    	<view class="{{dotClasses}}"></view>
-    </block>
-    <block wx:else>
-    	<slot></slot>
-    	<view class="{{countClasses}} i-class-alone">{{finalCount}}</view>
-    </block>
+    <slot></slot>
+    <view class="{{dotClasses}}" wx:if="{{ dot }}"></view>
+    <view class="{{countClasses}} i-class-alone" wx:elif="{{ count !== 0 }}">{{ finalCount }}</view>
 </view>

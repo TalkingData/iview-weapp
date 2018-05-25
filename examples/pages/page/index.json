@@ -1,6 +1,8 @@
 {
   "navigationBarTitleText": "Page 分页",
   "usingComponents": {
-    "i-page": "../../dist/page/index"
+    "i-page": "../../dist/page/index",
+    "i-icon": "../../dist/icon/index",
+    "i-panel": "../../dist/panel/index"
   }
 }
