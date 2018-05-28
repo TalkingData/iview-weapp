@@ -6,6 +6,6 @@
 
 <i-panel title="小数">
     <view style="padding: 16px">
-        <i-input-number value="{{ value2 }}" min="0" max="100" step="{{ 0.2 }}" bindchange="handleChange2" />
+        <i-input-number value="{{ value2 }}" min="0" max="100" step="0.2" bindchange="handleChange2" />
     </view>
 </i-panel>
