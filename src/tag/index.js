@@ -37,7 +37,7 @@ Component({
             const data = this.data;
             if( data.checkable ){
                 const checked = data.checked ? false : true;
-                this.triggerEvent('onchange',{
+                this.triggerEvent('change',{
                     name : data.name || '',
                     checked : checked
                 });

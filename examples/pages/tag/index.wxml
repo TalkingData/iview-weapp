@@ -50,7 +50,7 @@
     <i-tag 
         wx:for="{{tags}}" 
         wx:key="{{index}}"
-        bindonchange="onChange" 
+        bindchange="onChange" 
         checkable="{{true}}" 
         name="{{index}}" 
         color="{{item.color}}" 
