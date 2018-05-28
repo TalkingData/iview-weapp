@@ -28,7 +28,6 @@ Page({
         this.setData({
             'oneChecked' : event.detail.checked
         })
-        console.log(event.detail,1111111)
     },
     onChange(event){
         const detail = event.detail;

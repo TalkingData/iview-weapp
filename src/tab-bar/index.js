@@ -25,6 +25,10 @@ Component({
         color: {
             type: String,
             value: ''
+        },
+        fixed: {
+            type: Boolean,
+            value: false
         }
     },
 
