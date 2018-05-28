@@ -1,0 +1,4 @@
+.demo-checkbox-item {
+    padding: 20rpx;
+    border-bottom: 1px solid #dddee1;
+}

@@ -1,3 +1,4 @@
-<view class="i-class ">
-
+<view class="i-class {{wrapClasses}}" bindtap="checkboxChange">
+    <icon type="{{iconType}}" size="20" color="{{iconColor}}" class="{{iconCls}} {{disabled?iconDisabled:''}}" />
+    <text>{{title}}</text>
 </view>

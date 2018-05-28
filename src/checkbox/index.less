@@ -1,3 +1,23 @@
 @import "../styles/_base.less";
 @import "../styles/_mixins.less";
 
+@checkbox-prefix-cls: i-checkbox;
+
+.@{checkbox-prefix-cls} {
+    icon {
+        padding-right: 10rpx;
+    }
+    text {
+        display: block;
+        font-size: @size-font-base;
+    }
+    &-icon-left {
+        float: left;
+    }
+    &-icon-right {
+        float: right;
+    }
+    &-icon-disabled {
+        opacity: 0.5;
+    }
+}
