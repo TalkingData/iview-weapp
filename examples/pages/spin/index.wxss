@@ -42,3 +42,24 @@
         transform: rotate(360deg);
     }
 }
+
+.spin-article{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    position: relative;
+    border: 1px solid #eee;
+    text-align: center;
+    box-sizing: border-box;
+}
+.title{
+    font-size: 22px;
+}
+.name{
+    color: #999;
+    font-style: normal;
+    font-size: 14px;
+}
+.switch{
+    margin: 10px;
+}

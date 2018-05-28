@@ -3,7 +3,7 @@
         <view class="base-h2">基本用法</view>
         <i-panel class="cell-panel-demo">
             <i-cell>
-                <i-switch value="{{switch1}}"bindonchange="onChange"></i-switch>
+                <i-switch value="{{switch1}}" bindchange="onChange"></i-switch>
             </i-cell>
         </i-panel>
     </view>
@@ -11,7 +11,7 @@
         <view class="base-h2">自定义内容</view>
         <i-panel class="cell-panel-demo">
             <i-cell>
-                <i-switch value="{{switch1}}" size="large" bindonchange="onChange">
+                <i-switch value="{{switch1}}" size="large" bindchange="onChange">
                     <view slot="open">开启</view>
                     <view slot="close">关闭</view>
                 </i-switch>
@@ -23,7 +23,7 @@
         <view class="base-h2">图标</view>
         <i-panel class="cell-panel-demo">
             <i-cell>
-                <i-switch value="{{switch1}}" bindonchange="onChange">
+                <i-switch value="{{switch1}}" bindchange="onChange">
                     <i-icon type="right" slot="open"></i-icon>
                     <i-icon type="close" slot="close"></i-icon>
                 </i-switch>

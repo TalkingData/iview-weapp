@@ -37,6 +37,21 @@
     </i-grid-item>
 </i-grid>
 
-
 <i-panel title="切换显示状态"></i-panel>
 
+<view class="spin-article">
+    <view class="title">登金陵凤凰台</view>
+    <view class="name">李白</view>
+    <view class="article">
+        <view>凤凰台上凤凰游，凤去台空江自流。</view>
+        <view>吴宫花草埋幽径，晋代衣冠成古丘。</view>
+        <view>三山半落青天外，二水中分白鹭洲。</view>
+        <view>总为浮云能蔽日，长安不见使人愁。</view>
+    </view>
+
+    <i-spin size="large" fix wx:if="{{ spinShow }}"></i-spin>
+</view>
+
+<view class="switch">
+    <i-switch value="{{ switch }}" bindchange="onSwitchChange"></i-switch>
+</view>
