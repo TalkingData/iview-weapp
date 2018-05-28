@@ -1,0 +1,23 @@
+
+<i-cell-group>
+    <i-cell title="基本用法">
+        <i-rate 
+            bindchange="onChange1" 
+            value="{{starIndex1}}">
+        </i-rate>
+    </i-cell>
+    <i-cell title="自定义星星大小">
+        <i-rate 
+            bindchange="onChange2" 
+            value="{{starIndex2}}" 
+            size="{{32}}">
+        </i-rate>
+    </i-cell>
+    <i-cell title="自定义文字说明">
+        <i-rate 
+            bindchange="onChange2" 
+            value="{{starIndex2}}">
+            {{starIndex2}}星
+        </i-rate>
+    </i-cell>
+</i-cell-group>
