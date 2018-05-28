@@ -10,7 +10,7 @@
         <i-rate 
             bindchange="onChange2" 
             value="{{starIndex2}}" 
-            size="{{32}}">
+            size="32">
         </i-rate>
     </i-cell>
     <i-cell title="自定义文字说明">

@@ -1,7 +1,7 @@
 <view class="i-class i-rate" bindtouchmove="handleTouch">
-    <input type="text" :name="name" wx:value="{{value}}" class="i-rate-hide-input"></input>
+    <input type="text" :name="name" wx:value="{{value}}" class="i-rate-hide-input" />
     <view
-        wx:for="count"
+        wx:for="{{count}}"
         wx:key="{{item}}" 
         class="i-rate-star {{ parse.getCurrent( value,index ) }}" 
         data-index="{{index}}" 
