@@ -33,6 +33,7 @@
         <i-cell title="Checkbox 复选" is-link url="/pages/checkbox/index"></i-cell>
         <i-cell title="Switch 开关" is-link url="/pages/switch/index"></i-cell>
         <i-cell title="Rate 评分" is-link url="/pages/rate/index"></i-cell>
+        <i-cell title="InputNumber 数字输入框" is-link url="/pages/input-number/index"></i-cell>
     </i-cell-group>
 </i-panel>
 <i-panel title="操作反馈">
