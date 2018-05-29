@@ -22,7 +22,6 @@ Component({
         }
     },
     data: {},
-    attached() {},
     methods: {
         handleMaskClick() {
             if (!this.data.closeOverlay) {
