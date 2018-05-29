@@ -1,5 +1,3 @@
-const prefixCls = 'i-alert';
-
 Component({
     externalClasses: ['i-class'],
     options: {
