@@ -39,6 +39,7 @@ Component({
             value: 1
         }
     },
+    
 
     methods: {
         handleChangeStep(e, type) {
