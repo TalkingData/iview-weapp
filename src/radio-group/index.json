@@ -2,6 +2,6 @@
     "component": true,
     "usingComponents":
     {
-        "i-cell": "../cell/index"
+        "i-cell-group": "../cell-group/index"
     }
 }
