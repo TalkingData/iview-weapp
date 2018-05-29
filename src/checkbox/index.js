@@ -8,7 +8,7 @@ Component({
         }
     },
     properties: {
-        title: {
+        value: {
             type: String,
             value: ''
         },
@@ -24,56 +24,32 @@ Component({
             type: String,
             value: '#2d8cf0'
         },
-        iconPosition: {
+        position: {
             type: String,
-            value: 'left',
-            observer: 'setIconPosition'
+            value: 'left', //left right
+            observer: 'setPosition'
         }
     },
     data: {
         checked: true,
-        wrapClasses: [],
-        iconType: 'circle',
-        iconColor: '',
-        iconCls: `${prefixCls}-icon-left`,
-        iconDisabled: `${prefixCls}-icon-disabled`,
+        positionCls: `${prefixCls}-checkbox-left`,
     },
     attached() {
-        this.initCls();
-        this.setIcon();
-        this.setIconPosition();
+        this.setPosition();
     },
     methods: {
-        initCls() {
-            this.setData({
-                wrapClasses: this.wrapClasses(),
-            })
-        },
-        wrapClasses() {
-            return [
-                `${prefixCls}`,
-            ];
-        },
         changeCurrent(current) {
             this.setData({ checked: current });
-            this.setIcon();
         },
         checkboxChange() {
             if (this.data.disabled) return;
-            const item = { current: !this.data.checked, title: this.data.title };
+            const item = { current: !this.data.checked, value: this.data.value };
             const parent = this.getRelationNodes('../checkbox-group/index')[0];
             parent ? parent.emitEvent(item) : this.triggerEvent('change', item);
-            this.setIcon();
         },
-        setIcon() {
+        setPosition() {
             this.setData({
-                iconType: this.data.checked ? 'success' : 'circle',
-                iconColor: this.data.checked ? this.data.color : '',
-            });
-        },
-        setIconPosition() {
-            this.setData({
-                iconCls: this.data.iconPosition.indexOf('left') !== -1 ? `${prefixCls}-icon-left` : `${prefixCls}-icon-right`,
+                positionCls: this.data.position.indexOf('left') !== -1 ? `${prefixCls}-checkbox-left` : `${prefixCls}-checkbox-right`,
             });
         }
     }

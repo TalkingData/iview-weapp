@@ -14,14 +14,14 @@ Page({
             name: '葡萄',
         }],
         current: ['苹果', '葡萄'],
-        position: 'right',
+        position: 'left',
         animal: '熊猫',
         checked: false,
         disabled: false,
     },
     handleFruitChange({ detail = {} }) {
-        const index = this.data.current.indexOf(detail.title);
-        index === -1 ? this.data.current.push(detail.title) : this.data.current.splice(index, 1);
+        const index = this.data.current.indexOf(detail.value);
+        index === -1 ? this.data.current.push(detail.value) : this.data.current.splice(index, 1);
         this.setData({
             current: this.data.current
         });
