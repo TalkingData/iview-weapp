@@ -27,7 +27,7 @@ Component({
             const len = items.length;
             if (len > 0) {
                 items.forEach(item => {
-                    item.changeCurrent(val.indexOf(item.data.title) !== -1);
+                    item.changeCurrent(val.indexOf(item.data.value) !== -1);
                 });
             }
         },

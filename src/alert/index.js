@@ -1,5 +1,3 @@
-const prefixCls = 'i-alert';
-
 Component({
     externalClasses: ['i-class'],
     options: {
@@ -10,6 +8,7 @@ Component({
         type: {
             type: String,
             value: 'info',
+            observer: 'setIconType'
         },
         closable: {
             type: Boolean,
@@ -26,33 +25,10 @@ Component({
     },
     data: {
         closed: false,
-        wrapClasses: [],
-        iconClasses: '',
         iconType: '',
     },
-    attached() {
-        this.initCls();
-        this.iconType();
-    },
     methods: {
-        initCls() {
-            this.setData({
-                wrapClasses: this.wrapClasses(),
-                iconClasses: this.iconClasses(),
-            })
-        },
-        wrapClasses() {
-            return [
-                `${prefixCls}`,
-                `${prefixCls}-${this.data.type}`,
-                this.data.showIcon ? `${prefixCls}-with-icon` : '',
-                this.data.desc ? [`${prefixCls}-with-desc`] : '',
-            ];
-        },
-        iconClasses() {
-            return `${prefixCls}-icon`;
-        },
-        iconType() {
+        setIconType() {
             let type = '';
 
             switch (this.data.type) {

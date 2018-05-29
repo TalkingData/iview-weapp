@@ -1,6 +1,7 @@
-<i-cell title="123">
-   <!--  <view class="i-class {{wrapClasses}}" bindtap="checkboxChange">
-        <icon type={{iconType}}" size="20" color="{{iconColor}}" class="{{iconCls}} {{disabled?iconDisabled:''}}" />
-        <text>{{title}}</text>
-    </view> -->
-</i-cell>
+<view class="i-class i-checkbox" catchtap="checkboxChange">
+    <i-cell i-class="i-checkbox-cell">
+        <label>
+            <radio value="{{value}}" checked="{{checked}}" color="{{checked?color:''}}" disabled="{{disabled}}" class="{{positionCls}}" />{{value}}
+        </label>
+    </i-cell>
+</view>
