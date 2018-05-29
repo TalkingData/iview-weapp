@@ -8,6 +8,7 @@ Component({
         type: {
             type: String,
             value: 'info',
+            observer: 'setIconType'
         },
         closable: {
             type: Boolean,
@@ -26,11 +27,8 @@ Component({
         closed: false,
         iconType: '',
     },
-    attached() {
-        this.iconType();
-    },
     methods: {
-        iconType() {
+        setIconType() {
             let type = '';
 
             switch (this.data.type) {
