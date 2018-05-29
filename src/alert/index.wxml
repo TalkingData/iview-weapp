@@ -1,5 +1,5 @@
-<view class="i-class {{wrapClasses}}" wx:if="{{!closed}}">
-    <view wx:if="{{showIcon}}" class="{{iconClasses}}">
+<view class="i-class i-alert {{'i-alert-'+type}} {{showIcon?'i-alert-with-icon':''}} {{desc?'i-alert-with-desc':''}}" wx:if="{{!closed}}">
+    <view wx:if="{{showIcon}}" class="i-alert-icon">
         <i-icon type="{{iconType}}" size="{{desc?24:16}}"></i-icon>
     </view>
     <slot></slot>
