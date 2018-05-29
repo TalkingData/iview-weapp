@@ -55,7 +55,7 @@ Component({
                 value = addNum(value, step);
             }
 
-            if (value <= this.data.min || value >= this.data.max) return null;
+            if (value < this.data.min || value > this.data.max) return null;
 
             this.handleEmit(value, type);
         },
