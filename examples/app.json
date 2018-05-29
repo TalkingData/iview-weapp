@@ -1,6 +1,5 @@
 {
   "pages":[
-    "pages/checkbox/index",
     "pages/index/index",
     "pages/icon/index",
     "pages/color/index",
@@ -14,6 +13,7 @@
     "pages/alert/index",
     "pages/avatar/index",
     "pages/badge/index",
+    "pages/checkbox/index",
     "pages/drawer/index",
     "pages/input/index",
     "pages/input-number/index",
