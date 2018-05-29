@@ -1,6 +1,6 @@
-<view class="i-class {{wrapClasses}}">
-    <view wx:if="{{overlay}}" class="{{maskClasses}}" bindtap="handleMaskClick"></view>
-    <view class="{{containerClasses}}">
+<view class="i-class i-drawer {{show?'i-drawer-show':''}} {{'i-drawer-'+type}}">
+    <view wx:if="{{overlay}}" class="i-drawer-mask" bindtap="handleMaskClick"></view>
+    <view class="i-drawer-container">
         <slot></slot>
     </view>
 </view>

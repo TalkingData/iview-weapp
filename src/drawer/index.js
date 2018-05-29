@@ -1,12 +1,9 @@
-const prefixCls = 'i-drawer';
-
 Component({
     externalClasses: ['i-class'],
     properties: {
         show: {
             type: Boolean,
-            value: false,
-            observer: 'initCls'
+            value: false
         },
 
         overlay: {
@@ -19,35 +16,14 @@ Component({
             value: true
         },
 
-        // left right
         type: {
             type: String,
-            value: 'left'
+            value: 'left' // left right
         }
     },
-    data: {
-        wrapClasses: [],
-        showCls: `${prefixCls}-show`,
-        maskClasses: `${prefixCls}-mask`,
-        containerClasses: `${prefixCls}-container`,
-    },
-    attached() {
-        this.initCls();
-    },
+    data: {},
+    attached() {},
     methods: {
-        initCls() {
-            this.setData({
-                wrapClasses: [this.wrapClasses()]
-            })
-        },
-        wrapClasses() {
-            return [
-                `${prefixCls}`,
-                this.data.show ? `${prefixCls}-show` : '',
-                `${prefixCls}-${this.data.type}`,
-            ];
-        },
-
         handleMaskClick() {
             if (!this.data.closeOverlay) {
                 return;
