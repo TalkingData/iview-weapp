@@ -1,3 +1,7 @@
-<view class="i-class ">
-    <slot></slot>
-</view>
+<!-- <view class="i-class"> -->
+    <i-cell-group>
+        <!-- <i-cell> -->
+        <slot></slot>
+        <!-- </i-cell> -->
+    </i-cell-group>
+<!-- </view> -->

@@ -1,4 +1,6 @@
-<view class="i-class {{wrapClasses}}" bindtap="checkboxChange">
-    <icon type="{{iconType}}" size="20" color="{{iconColor}}" class="{{iconCls}} {{disabled?iconDisabled:''}}" />
-    <text>{{title}}</text>
-</view>
+<i-cell title="123">
+   <!--  <view class="i-class {{wrapClasses}}" bindtap="checkboxChange">
+        <icon type={{iconType}}" size="20" color="{{iconColor}}" class="{{iconCls}} {{disabled?iconDisabled:''}}" />
+        <text>{{title}}</text>
+    </view> -->
+</i-cell>

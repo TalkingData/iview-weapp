@@ -1,12 +1,12 @@
 <i-panel title="group-水果">
     <i-checkbox-group current="{{current}}" bindchange="handleFruitChange">
-        <i-checkbox wx:for="{{fruit}}" iconPosition="{{position}}" wx:key="{{item.id}}" title="{{item.name}}" i-class="demo-checkbox-item">
+        <i-checkbox wx:for="{{fruit}}" iconPosition="{{position}}" wx:key="{{item.id}}" title="{{item.name}}">
         </i-checkbox>
     </i-checkbox-group>
 </i-panel>
 <i-button bindclick="handleClick" type="ghost">切换复选框位置</i-button>
 <i-panel title="checkbox-动物">
-    <i-checkbox title="{{animal}}" disabled="{{disabled}}" checked="{{checked}}" i-class="demo-checkbox-item" bindchange="handleAnimalChange">
+    <i-checkbox title="{{animal}}" disabled="{{disabled}}" checked="{{checked}}" bindchange="handleAnimalChange">
     </i-checkbox>
 </i-panel>
 <i-button bindclick="handleDisabled" type="ghost">切换disabled状态</i-button>
