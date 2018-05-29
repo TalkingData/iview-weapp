@@ -1,41 +1,20 @@
-<view class="i-switch-demo">
-    <view class="i-switch-demo-item">
-        <view class="base-h2">基本用法</view>
-        <i-panel class="cell-panel-demo">
-            <i-cell>
-                <i-switch value="{{switch1}}"bindonchange="onChange"></i-switch>
-            </i-cell>
-        </i-panel>
-    </view>
-    <view class="i-switch-demo-item">
-        <view class="base-h2">自定义内容</view>
-        <i-panel class="cell-panel-demo">
-            <i-cell>
-                <i-switch value="{{switch1}}" size="large" bindonchange="onChange">
-                    <view slot="open">开启</view>
-                    <view slot="close">关闭</view>
-                </i-switch>
-            </i-cell>
-        </i-panel>
-            
-    </view>
-    <view class="i-switch-demo-item">
-        <view class="base-h2">图标</view>
-        <i-panel class="cell-panel-demo">
-            <i-cell>
-                <i-switch value="{{switch1}}" bindonchange="onChange">
-                    <i-icon type="right" slot="open"></i-icon>
-                    <i-icon type="close" slot="close"></i-icon>
-                </i-switch>
-            </i-cell>
-        </i-panel>
-    </view>
-    <view class="i-switch-demo-item">
-        <view class="base-h2">静止切换</view>
-        <i-panel class="cell-panel-demo">
-            <i-cell>
-                <i-switch value="{{switch1}}" disabled="{{true}}"></i-switch>
-            </i-cell>
-        </i-panel>
-    </view>
-</view>
+<i-cell-group>
+    <i-cell title="基本用法">
+        <i-switch value="{{switch1}}" bindchange="onChange" slot="footer"></i-switch>
+    </i-cell>
+    <i-cell title="自定义内容">
+        <i-switch value="{{switch1}}" size="large" bindchange="onChange" slot="footer">
+            <view slot="open">开启</view>
+            <view slot="close">关闭</view>
+        </i-switch>
+    </i-cell>
+    <i-cell title="图标">
+        <i-switch value="{{switch1}}" bindchange="onChange" slot="footer">
+            <i-icon type="right" slot="open"></i-icon>
+            <i-icon type="close" slot="close"></i-icon>
+        </i-switch>
+    </i-cell>
+    <i-cell title="禁止切换">
+        <i-switch value="{{switch1}}" disabled="{{true}}" slot="footer"></i-switch>
+    </i-cell>
+</i-cell-group>

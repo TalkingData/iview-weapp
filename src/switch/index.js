@@ -30,7 +30,7 @@ Component({
             if( this.data.disabled ) return;
             const data = this.data;
             const value = data.value ? false : true;
-            this.triggerEvent('onchange',{
+            this.triggerEvent('change',{
                 value : value
             })
         }
