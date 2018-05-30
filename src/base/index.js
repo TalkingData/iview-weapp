@@ -25,7 +25,10 @@ Toast.hide = function (selector = '#toast') {
 };
 
 function Message(options) {
+    const { selector = '#message' } = options;
+    const ctx = getCtx(selector);
 
+    ctx.handleShow(options);
 }
 
 module.exports = {
