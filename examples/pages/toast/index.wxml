@@ -1,0 +1,10 @@
+<i-button bindclick="handleText">只显示文本</i-button>
+<i-button bindclick="handleSuccess">成功</i-button>
+<i-button bindclick="handleWarning">警告</i-button>
+<i-button bindclick="handleError">错误</i-button>
+<i-button bindclick="handleLoading">Loading</i-button>
+<i-button bindclick="handleIcon">使用图标</i-button>
+<i-button bindclick="handleImage">使用自定义图片</i-button>
+<i-button bindclick="handleMask">无遮罩层</i-button>
+
+<i-toast id="toast" />
