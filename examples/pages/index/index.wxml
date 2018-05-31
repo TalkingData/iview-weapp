@@ -52,5 +52,6 @@
         <i-cell title="Drawer 抽屉" is-link url="/pages/drawer/index"></i-cell>
         <i-cell title="Page 分页" is-link url="/pages/page/index"></i-cell>
         <i-cell title="TabBar 标签栏" is-link url="/pages/tab-bar/index"></i-cell>
+        <i-cell title="NoticeBar 通告栏" is-link url="/pages/notice-bar/index"></i-cell>
     </i-cell-group>
 </i-panel>

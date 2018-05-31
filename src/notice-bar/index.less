@@ -1,0 +1,52 @@
+@import "../styles/_base.less";
+@import "../styles/_mixins.less";
+
+
+.i-noticebar {
+    display: flex;
+    height: 72rpx;
+    line-height: 72rpx;
+    font-size: @size-font-base;
+    color: #f76a24;
+    background-color: #fefcec;
+    overflow: hidden;
+    &-icon {
+        display: flex;
+        margin-left: 30rpx;
+        align-items: center;
+        & + view {
+            margin-left: 10rpx;
+        }
+    }
+    &-operation {
+        display: flex;
+        margin-right: 16rpx;
+        align-items: center;
+    }
+
+    &-content-wrap {
+        position: relative;
+        flex: 1;
+        margin: 0 30rpx;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        .i-noticebar-content {
+            position: absolute;
+            transition-duration:20s;
+            
+           // &-loop{
+           //  transform:translateX(-450px);
+           // }
+        }
+
+    }
+    // &-content-move{
+    //   animation:mymove 5s infinite;
+    // }
+    // @keyframes mymove
+    // {
+    // from {left:0px;}
+    // to {left:-200px;}
+    // }
+}
