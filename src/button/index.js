@@ -28,7 +28,30 @@ Component({
         long: {
             type: Boolean,
             value: false
-        }
+        },
+        openType: String,
+        appParameter: String,
+        hoverStopPropagation: Boolean,
+        hoverStartTime: {
+            type: Number,
+            value: 20
+        },
+        hoverStayTime: {
+            type: Number,
+            value: 70
+        },
+        lang: {
+            type: String,
+            value: 'en'
+        },
+        sessionFrom: {
+            type: String,
+            value: ''
+        },
+        sendMessageTitle: String,
+        sendMessagePath: String,
+        sendMessageImg: String,
+        showMessageCard: String
     },
 
     methods: {
