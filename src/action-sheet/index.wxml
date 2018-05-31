@@ -12,6 +12,7 @@
                 long
             >
                 <view class="i-as-btn-loading" wx:if="{{ item.loading }}"></view>
+                <i-icon wx:if="{{ item.icon }}" type="{{ item.icon }}" i-class="i-as-btn-icon"></i-icon>
                 <view class="i-as-btn-text" style="{{ item.color ? 'color: ' + item.color : '' }}">{{ item.name }}</view>
             </i-button>
         </view>

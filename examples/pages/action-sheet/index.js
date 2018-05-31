@@ -9,6 +9,11 @@ Page({
             },
             {
                 name: '选项2'
+            },
+            {
+                name: '去分享',
+                icon: 'share',
+                openType: 'share'
             }
         ],
         actions2: [
@@ -17,6 +22,13 @@ Page({
                 color: '#ed3f14'
             }
         ]
+    },
+
+    onShareAppMessage() {
+        return {
+            title: 'iView Weapp',
+            imageUrl: 'https://file.iviewui.com/iview-weapp-logo.png'
+        };
     },
 
     handleOpen1 () {
