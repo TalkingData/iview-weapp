@@ -19,6 +19,7 @@
     "pages/input-number/index",
     "pages/message/index",
     "pages/modal/index",
+    "pages/notice-bar/index",
     "pages/page/index",
     "pages/progress/index",
     "pages/radio/index",
