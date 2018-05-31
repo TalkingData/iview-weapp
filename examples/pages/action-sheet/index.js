@@ -13,9 +13,6 @@ Page({
         ],
         actions2: [
             {
-                name: '取消',
-            },
-            {
                 name: '删除',
                 color: '#ed3f14'
             }
@@ -54,31 +51,24 @@ Page({
         });
     },
 
-    handleClickItem2 ({ detail }) {
-        const index = detail.index;
-        if (index === 0) {
-            this.setData({
-                visible2: false
-            });
-        } else if (index === 1) {
-            const action = [...this.data.actions2];
-            action[index].loading = true;
+    handleClickItem2 () {
+        const action = [...this.data.actions2];
+        action[0].loading = true;
 
+        this.setData({
+            actions2: action
+        });
+
+        setTimeout(() => {
+            action[0].loading = false;
             this.setData({
+                visible2: false,
                 actions2: action
             });
-
-            setTimeout(() => {
-                action[index].loading = false;
-                this.setData({
-                    visible2: false,
-                    actions2: action
-                });
-                $Message({
-                    content: '删除成功！',
-                    type: 'success'
-                });
-            }, 2000);
-        }
+            $Message({
+                content: '删除成功！',
+                type: 'success'
+            });
+        }, 2000);
     }
 });
