@@ -5,5 +5,5 @@
            <slot></slot>
         </view>
     </view>
-    <i-icon wx:if="{{closable}}" class="i-noticebar-operation" type="close" size="24" color="#f76a24" bindtap="handleClose"></i-icon>
+    <i-icon wx:if="{{closable}}" class="i-noticebar-operation" type="close" size="20" color="#f76a24" bindtap="handleClose"></i-icon>
 </view>
