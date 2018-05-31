@@ -1,0 +1,13 @@
+<view style="margin-top: 100px">
+    <i-button type="ghost" bind:click="handleOpen1">一般用法</i-button>
+    <i-button type="ghost" bind:click="handleOpen2">带有提示、异步</i-button>
+</view>
+<i-action-sheet visible="{{ visible1 }}" actions="{{ actions1 }}" show-cancel bind:cancel="handleCancel1" bind:click="handleClickItem1" />
+<i-action-sheet visible="{{ visible2 }}" actions="{{ actions2 }}" show-cancel bind:cancel="handleCancel2" bind:click="handleClickItem2" mask-closable="{{ false }}">
+    <view slot="header" style="padding: 16px">
+        <view style="color: #444;font-size: 16px">确定吗？</view>
+        <text>删除后无法恢复哦</text>
+    </view>
+</i-action-sheet>
+
+<i-message id="message" />

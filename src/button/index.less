@@ -7,8 +7,8 @@
 }
 
 .btn-color(@color) {
-    color: #fff;
-    background: @color;
+    color: #fff !important;
+    background: @color !important;
 }
 
 .btn-primary() {
@@ -17,7 +17,7 @@
 
 .btn-ghost() {
     .btn-color(#fff);
-    color: @text-color;
+    color: @text-color !important;
 }
 
 .i-btn{
@@ -30,18 +30,24 @@
     user-select: none;
     font-size: @size-font-base;
     border-radius: 2px;
+    border: 0 !important;
+    position: relative;
+    text-decoration: none;
 
     height: @btn-circle-size;
     line-height: @btn-circle-size;
 
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+
     .btn-color(@btn-default-bg);
-    color: @text-color;
+    color: @text-color !important;
 
     margin: 10px;
 
     &-long{
         border-radius: 0;
         margin: 0;
+        box-shadow: none;
     }
 
     &-large {
@@ -107,8 +113,8 @@
     }
 
     &-disabled{
-        color: @btn-disable-color;
-        background: @btn-disable-bg;
+        color: @btn-disable-color !important;
+        background: @btn-disable-bg !important;
     }
 }
 @keyframes btn-spin {
