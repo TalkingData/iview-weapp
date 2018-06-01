@@ -1,0 +1,3 @@
+<i-cell-group class="i-class">
+    <slot></slot>
+</i-cell-group>

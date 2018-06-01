@@ -1,0 +1,1 @@
+<view class="i-class i-grid-item" style="width: {{ width }}"><slot></slot></view>

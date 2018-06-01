@@ -1,6 +1,6 @@
 {
   "name": "iview-weapp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "高质量微信小程序 UI 组件库",
   "main": "app.js",
   "directories": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "dev": "gulp --gulpfile build/build-dev.js",
-    "build": "gulp --gulpfile build/build-prod.js"
+    "build": "gulp --gulpfile build/build-prod.js",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
