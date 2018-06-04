@@ -16,7 +16,7 @@ Component({
             value: true
         },
 
-        type: {
+        mode: {
             type: String,
             value: 'left' // left right
         }
