@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/slide/index",
     "pages/index/index",
     "pages/icon/index",
     "pages/color/index",

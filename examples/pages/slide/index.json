@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "slide 警告提示",
+  "usingComponents": {
+    "i-slide": "../../dist/slide/index"
+  }
+}
