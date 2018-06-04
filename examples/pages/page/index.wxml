@@ -1,13 +1,13 @@
 <i-panel title="带有文字的按钮"></i-panel>
 
-<i-page current="{{ current }}" total="5" bindchange="handleChange">
+<i-page current="{{ current }}" total="5" bind:change="handleChange">
     <view slot="prev">Prev</view>
     <view slot="next">Next</view>
 </i-page>
 
 <i-panel title="带有文字和图标的按钮"></i-panel>
 
-<i-page current="{{ current }}" total="5" bindchange="handleChange">
+<i-page current="{{ current }}" total="5" bind:change="handleChange">
     <view slot="prev">
         <i-icon type="return"></i-icon>
         上一步
@@ -20,15 +20,15 @@
 
 <i-panel title="隐藏数字"></i-panel>
 
-<i-page current="{{ current }}" total="5" simple bindchange="handleChange">
+<i-page current="{{ current }}" total="5" simple bind:change="handleChange">
     <view slot="prev">Prev</view>
     <view slot="next">Next</view>
 </i-page>
 
 <i-panel title="只显示数字"></i-panel>
 
-<i-page current="{{ current }}" total="5" mode="number" bindchange="handleChange"></i-page>
+<i-page current="{{ current }}" total="5" mode="number" bind:change="handleChange"></i-page>
 
 <i-panel title="显示点"></i-panel>
 
-<i-page current="{{ current }}" total="5" mode="pointer" bindchange="handleChange"></i-page>
+<i-page current="{{ current }}" total="5" mode="pointer" bind:change="handleChange"></i-page>
