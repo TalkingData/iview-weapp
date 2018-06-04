@@ -20,4 +20,11 @@
             {{starIndex2}}星
         </i-rate>
     </i-cell>
+     <i-cell title="手势touch选择星">
+        <i-rate 
+            bindchange="onChange3" 
+            value="{{starIndex3}}">
+            {{starIndex3}}星
+        </i-rate>
+    </i-cell>
 </i-cell-group>

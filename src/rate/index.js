@@ -13,6 +13,11 @@ Component({
             type : Boolean,
             value : false
         },
+        //支持touch必须使用id去获取位置信息
+        starid : {
+            type : String,
+            default : ''
+        },
         size : {
             type : Number,
             value : 20
@@ -22,6 +27,11 @@ Component({
             value : ''
         }
     },
+    data : {
+        touchesStart : {
+            pageX : 0
+        }
+    },
     methods : {
         handleClick(e){
             const index = e.currentTarget.dataset.index;
@@ -29,13 +39,31 @@ Component({
                 index : index + 1
             })
         },
-        //later to do this
-        handleTouch(e){
-            //console.log(e,2222222)
-        },
-        handleTouchEnd(e){
-            
-            //console.log(e,'----handleTouchEnd')
+        handleTouchMove(e){
+
+            if( !e.changedTouches[0] ){
+                return;
+            }
+
+            const data = this.data;
+            const movePageX =  e.changedTouches[0].pageX;
+            const space = movePageX - data.touchesStart.pageX;
+
+            if( data.space <= 1 ){
+                return;
+            }
+            let setIndex = Math.ceil( space/data.size );
+            setIndex = setIndex  > data.count ? data.count : ( setIndex < 1 ? 1 : setIndex ) ;
+            this.triggerEvent('change',{
+                index : setIndex 
+            })
         }
+    },
+    ready(){
+       const className = '.i-rate';
+        var query = wx.createSelectorQuery().in(this)
+        query.select( className ).boundingClientRect((res)=>{
+            this.data.touchesStart.pageX = res.left || 0;
+        }).exec()
     }
 });
