@@ -6,6 +6,12 @@
             value="{{starIndex1}}">
         </i-rate>
     </i-cell>
+    <i-cell title="自定义星星个数">
+        <i-rate 
+            count="{{10}}"
+            value="{{starIndex5}}">
+        </i-rate>
+    </i-cell>
     <i-cell title="自定义星星大小">
         <i-rate 
             bindchange="onChange2" 
@@ -25,6 +31,13 @@
             bindchange="onChange3" 
             value="{{starIndex3}}">
             {{starIndex3}}星
+        </i-rate>
+    </i-cell>
+    <i-cell title="禁用点击和手势选择星">
+        <i-rate 
+            disabled="{{true}}"
+            value="{{starIndex4}}">
+            {{starIndex4}}星
         </i-rate>
     </i-cell>
 </i-cell-group>

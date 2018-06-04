@@ -29,18 +29,23 @@ Component({
     },
     methods : {
         handleClick(e){
+            const data = this.data;
+            if( data.disabled ){
+                return;
+            }
             const index = e.currentTarget.dataset.index;
             this.triggerEvent('change',{
                 index : index + 1
             })
         },
         handleTouchMove(e){
-
+            const data = this.data;
+            if( data.disabled ){
+                return;
+            }
             if( !e.changedTouches[0] ){
                 return;
             }
-
-            const data = this.data;
             const movePageX =  e.changedTouches[0].pageX;
             const space = movePageX - data.touchesStart.pageX;
 
