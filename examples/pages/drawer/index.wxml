@@ -8,7 +8,7 @@
             单击遮罩层关闭
         </view>
     </i-drawer>
-    <i-drawer mode="left" visible="{{showLeft2}}" close-overlay="{{false}}">
+    <i-drawer mode="left" visible="{{showLeft2}}" mask-closable="{{false}}">
         <view class="demo-container">
             禁止单击遮罩关闭
             <i-button bind:click="toggleLeft2" type="primary">关闭</i-button>
@@ -19,7 +19,7 @@
             单击遮罩层关闭
         </view>
     </i-drawer>
-    <i-drawer mode="right" visible="{{showRight2}}" close-overlay="{{false}}">
+    <i-drawer mode="right" visible="{{showRight2}}" mask-closable="{{false}}">
         <view class="demo-container">
             禁止单击遮罩关闭
             <i-button bind:click="toggleRight2" type="primary">关闭</i-button>
