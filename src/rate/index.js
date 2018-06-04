@@ -13,11 +13,6 @@ Component({
             type : Boolean,
             value : false
         },
-        //支持touch必须使用id去获取位置信息
-        starid : {
-            type : String,
-            default : ''
-        },
         size : {
             type : Number,
             value : 20
@@ -49,11 +44,11 @@ Component({
             const movePageX =  e.changedTouches[0].pageX;
             const space = movePageX - data.touchesStart.pageX;
 
-            if( data.space <= 1 ){
+            if( space <= 0 ){
                 return;
             }
             let setIndex = Math.ceil( space/data.size );
-            setIndex = setIndex  > data.count ? data.count : ( setIndex < 1 ? 1 : setIndex ) ;
+            setIndex = setIndex  > data.count ? data.count : setIndex ;
             this.triggerEvent('change',{
                 index : setIndex 
             })

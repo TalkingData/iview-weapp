@@ -1,5 +1,4 @@
 <view class="i-class i-rate" 
-    id="{{parse.getOnlyId(starid)}}" 
     bindtouchmove="handleTouchMove">
     <input type="text" :name="name" wx:value="{{value}}" class="i-rate-hide-input" />
     <view
@@ -18,11 +17,6 @@ module.exports = {
     getCurrent : function( value,index ){
         if( index < value  ){
             return prefixCls + '-current'
-        }
-    },
-    getOnlyId : function(starid){
-        if( starid !== '' ){
-            return prefixCls + '-' + starid;
         }
     }
 }
