@@ -51,7 +51,7 @@ Component({
         sendMessageTitle: String,
         sendMessagePath: String,
         sendMessageImg: String,
-        showMessageCard: String
+        showMessageCard: Boolean
     },
 
     methods: {
