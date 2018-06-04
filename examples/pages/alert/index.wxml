@@ -54,10 +54,10 @@
     An error prompt
     <view slot="desc">Content of prompt. Content of prompt.</view>
 </i-alert>
-<i-alert closable bindclick="handleClick">
+<i-alert closable bind:close="handleClick">
     An info prompt
 </i-alert>
-<i-alert type="success" show-icon desc closable bindclick="handleClick">
+<i-alert type="success" show-icon desc closable bind:close="handleClick">
     An success prompt
     <view slot="desc">Content of prompt. Content of prompt.</view>
 </i-alert>

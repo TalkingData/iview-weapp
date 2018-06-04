@@ -53,7 +53,7 @@ Component({
             this.setData({
                 closed: !this.data.closed,
             });
-            this.triggerEvent('click');
+            this.triggerEvent('close');
         },
 
     }
