@@ -27,7 +27,7 @@
         </i-step>
     </i-steps>
     
-     <view class="one-tag">使用ico库图标</view>
+     <view class="one-tag">使用 icon 图标</view>
     <i-steps>
         <i-step status="finish" icon="barrage">
             <view slot="title">
