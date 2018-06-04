@@ -6,12 +6,12 @@ Component({
             value: false
         },
 
-        overlay: {
+        mask: {
             type: Boolean,
             value: true
         },
 
-        closeOverlay: {
+        maskClosable: {
             type: Boolean,
             value: true
         },
@@ -24,7 +24,7 @@ Component({
     data: {},
     methods: {
         handleMaskClick() {
-            if (!this.data.closeOverlay) {
+            if (!this.data.maskClosable) {
                 return;
             }
             this.triggerEvent('close', {});
