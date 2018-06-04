@@ -1,28 +1,28 @@
 <view class="demo">
-    <i-button bindclick="toggleLeft1" type="ghost">左边弹出1</i-button>
-    <i-button bindclick="toggleLeft2" type="primary">左边弹出2</i-button>
-    <i-button bindclick="toggleRight1" type="ghost">右边弹出1</i-button>
-    <i-button bindclick="toggleRight2" type="primary">右边弹出2</i-button>
-    <i-drawer type="left" show="{{showLeft1}}" bindclose="toggleLeft1">
+    <i-button bind:click="toggleLeft1" type="ghost">左边弹出1</i-button>
+    <i-button bind:click="toggleLeft2" type="primary">左边弹出2</i-button>
+    <i-button bind:click="toggleRight1" type="ghost">右边弹出1</i-button>
+    <i-button bind:click="toggleRight2" type="primary">右边弹出2</i-button>
+    <i-drawer type="left" visible="{{showLeft1}}" bind:close="toggleLeft1">
         <view class="demo-container">
             单击遮罩层关闭
         </view>
     </i-drawer>
-    <i-drawer type="left" show="{{showLeft2}}" closeOverlay="{{false}}">
+    <i-drawer type="left" visible="{{showLeft2}}" close-overlay="{{false}}">
         <view class="demo-container">
             禁止单击遮罩关闭
-            <i-button bindclick="toggleLeft2" type="primary">关闭</i-button>
+            <i-button bind:click="toggleLeft2" type="primary">关闭</i-button>
         </view>
     </i-drawer>
-    <i-drawer type="right" show="{{showRight1}}" bindclose="toggleRight1">
+    <i-drawer type="right" visible="{{showRight1}}" bind:close="toggleRight1">
         <view class="demo-container">
             单击遮罩层关闭
         </view>
     </i-drawer>
-    <i-drawer type="right" show="{{showRight2}}" closeOverlay="{{false}}">
+    <i-drawer type="right" visible="{{showRight2}}" close-overlay="{{false}}">
         <view class="demo-container">
             禁止单击遮罩关闭
-            <i-button bindclick="toggleRight2" type="primary">关闭</i-button>
+            <i-button bind:click="toggleRight2" type="primary">关闭</i-button>
         </view>
     </i-drawer>
 </view>

@@ -1,7 +1,7 @@
 Component({
     externalClasses: ['i-class'],
     properties: {
-        show: {
+        visible: {
             type: Boolean,
             value: false
         },
