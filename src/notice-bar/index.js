@@ -4,7 +4,7 @@ const BG_COLOR = '#fff7cc';
 
 Component({
     externalClasses: ['i-class'],
-    
+
     properties: {
         closable: {
             type: Boolean,
