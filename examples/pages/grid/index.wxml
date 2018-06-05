@@ -1,12 +1,62 @@
 <i-grid>
-    <i-grid-item>
-        <i-grid-icon>
-            <image src="../images/icon-vip.png" />
-        </i-grid-icon>
-        <i-grid-label>Grid</i-grid-label>
-    </i-grid-item>
-    <i-grid-item>1</i-grid-item>
-    <i-grid-item>2</i-grid-item>
-    <i-grid-item wx:if="{{ isAdd }}">4</i-grid-item>
+    <i-row>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="activity" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="addressbook" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="barrage" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+    </i-row>
+    <i-row>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="collection" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="computer" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="coupons" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+    </i-row>
+    <i-row>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="flag" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="interactive" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+        <i-grid-item>
+            <i-grid-icon>
+                <i-icon size="24" type="mail" />
+                <i-grid-label>宫格</i-grid-label>
+            </i-grid-icon>
+        </i-grid-item>
+    </i-row>
 </i-grid>
-<button bindtap="handleAdd">add</button>

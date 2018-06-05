@@ -4,6 +4,8 @@
     "i-grid": "../../dist/grid/index",
     "i-grid-item": "../../dist/grid-item/index",
     "i-grid-icon": "../../dist/grid-icon/index",
-    "i-grid-label": "../../dist/grid-label/index"
+    "i-grid-label": "../../dist/grid-label/index",
+    "i-icon": "../../dist/icon/index",
+    "i-row": "../../dist/row/index"
   }
 }
