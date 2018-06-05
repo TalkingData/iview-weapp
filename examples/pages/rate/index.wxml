@@ -7,7 +7,8 @@
         </i-rate>
     </i-cell>
     <i-cell title="自定义星星个数">
-        <i-rate 
+        <i-rate
+            bind:change="onChange5"
             count="{{10}}"
             value="{{starIndex5}}">
         </i-rate>
