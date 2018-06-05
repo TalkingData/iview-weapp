@@ -1,11 +1,11 @@
-<i-panel class="panel-example" title="标题" hide-top>
-    <view style="padding: 15px;">PANEL 内容区域</view>
+<i-panel title="标题" hide-top>
+    <view style="padding: 15px;">头部距离为 0 的 Panel</view>
 </i-panel>
 
-<i-panel title="标题" class="panel-example">
-    <view style="padding: 15px;">带有标题的 PANEL</view>
+<i-panel title="标题">
+    <view style="padding: 15px;">带有标题的 Panel</view>
 </i-panel>
 
-<i-panel title="标题" hide-border="{{ true }}" class="panel-example">
-    <view style="padding: 15px;">无边框的panel</view>
+<i-panel title="标题" hide-border="{{ true }}">
+    <view style="padding: 15px;">无边框的 Panel</view>
 </i-panel>
