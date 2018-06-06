@@ -13,7 +13,8 @@
 
 ## 体验
 使用微信扫一扫体验小程序组件示例
--![](https://raw.githubusercontent.com/TalkingData/iview-weapp/master/assets/code.jpg)
+
+<img width="200" src="https://raw.githubusercontent.com/TalkingData/iview-weapp/master/assets/code.jpg">
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
