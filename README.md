@@ -8,7 +8,12 @@
 
 ### 一套高质量的微信小程序 UI 组件库
 
+## 文档
+[https://weapp.iviewui.com](https://weapp.iviewui.com)
 
+## 体验
+使用微信扫一扫体验小程序组件示例
+-![](https://raw.githubusercontent.com/TalkingData/iview-weapp/master/assets/code.jpg)
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
