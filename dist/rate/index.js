@@ -22,20 +22,48 @@ Component({
             value : ''
         }
     },
+    data : {
+        touchesStart : {
+            pageX : 0
+        }
+    },
     methods : {
         handleClick(e){
+            const data = this.data;
+            if( data.disabled ){
+                return;
+            }
             const index = e.currentTarget.dataset.index;
             this.triggerEvent('change',{
                 index : index + 1
             })
         },
-        //later to do this
-        handleTouch(e){
-            //console.log(e,2222222)
-        },
-        handleTouchEnd(e){
-            
-            //console.log(e,'----handleTouchEnd')
+        handleTouchMove(e){
+            const data = this.data;
+            if( data.disabled ){
+                return;
+            }
+            if( !e.changedTouches[0] ){
+                return;
+            }
+            const movePageX =  e.changedTouches[0].pageX;
+            const space = movePageX - data.touchesStart.pageX;
+
+            if( space <= 0 ){
+                return;
+            }
+            let setIndex = Math.ceil( space/data.size );
+            setIndex = setIndex  > data.count ? data.count : setIndex ;
+            this.triggerEvent('change',{
+                index : setIndex 
+            })
         }
+    },
+    ready(){
+       const className = '.i-rate';
+        var query = wx.createSelectorQuery().in(this)
+        query.select( className ).boundingClientRect((res)=>{
+            this.data.touchesStart.pageX = res.left || 0;
+        }).exec()
     }
 });
