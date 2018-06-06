@@ -1,7 +1,14 @@
+<p align="center">
+    <a href="https://weapp.iviewui.com">
+        <img width="200" src="https://file.iviewui.com/weapp-logo.svg">
+    </a>
+</p>
+
 # iView Weapp
 
-# Todo List
-![](https://raw.githubusercontent.com/TalkingData/iview-weapp/master/assets/iview-weapp.png)
+### 一套高质量的微信小程序 UI 组件库
+
+
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
