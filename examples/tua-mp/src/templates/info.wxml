@@ -1,0 +1,8 @@
+<template name="info">
+    <view class="info">
+        <view>Long-press to edit a todo</view>
+        <view><text style="font-weight: bold;">长按</text>编辑一个 todo</view>
+        <view class="a">Written by StEve Young</view>
+        <view class="a">Powered By tua-mp @github/@npm</view>
+    </view>
+</template>

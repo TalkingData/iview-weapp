@@ -1,0 +1,43 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/tag/tag",
+        "pages/card/card",
+        "pages/grid/grid",
+        "pages/icon/icon",
+        "pages/list/list",
+        "pages/page/page",
+        "pages/rate/rate",
+        "pages/spin/spin",
+        "pages/tabs/tabs",
+        "pages/alert/alert",
+        "pages/badge/badge",
+        "pages/color/color",
+        "pages/input/input",
+        "pages/modal/modal",
+        "pages/panel/panel",
+        "pages/radio/radio",
+        "pages/steps/steps",
+        "pages/toast/toast",
+        "pages/avatar/avatar",
+        "pages/button/button",
+        "pages/drawer/drawer",
+        "pages/layout/layout",
+        "pages/switch/switch",
+        "pages/message/message",
+        "pages/tab-bar/tab-bar",
+        "pages/checkbox/checkbox",
+        "pages/progress/progress",
+        "pages/notice-bar/notice-bar",
+        "pages/action-sheet/action-sheet",
+        "pages/input-number/input-number"
+    ],
+    "window": {
+        "backgroundColor": "#f9f9f9",
+        "backgroundTextStyle": "dark",
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "iView WeApp",
+        "navigationBarBackgroundColor": "#FAFAFA"
+    },
+    "debug": true
+}

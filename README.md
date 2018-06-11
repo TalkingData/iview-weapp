@@ -44,7 +44,10 @@ npm install
 # 编译组件
 npm run dev
 ```
-然后，将 `examples` 目录在微信开发者工具中打开即可。
+
+* `examples/basic/`: 原生开发方式，可以用开发者用具直接打开。
+* `examples/tua-mp/`: 与 [tua-mp](https://github.com/tuateam/tua-mp) 结合的例子，需要在该目录下先安装依赖（`npm i`）并执行打包（`npm start`）后，用开发者用具打开 `dist/` 目录。
+
 ## License
 [MIT](http://opensource.org/licenses/MIT)
 
