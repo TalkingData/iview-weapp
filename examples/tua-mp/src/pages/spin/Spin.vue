@@ -70,7 +70,7 @@
     </view>
 
     <view class="switch">
-        <i-switch value="{{ switch }}" bindchange="onSwitchChange"></i-switch>
+        <i-switch value="{{ switchVal }}" bindchange="onSwitchChange"></i-switch>
     </view>
 </template>
 
@@ -78,14 +78,14 @@
 export default {
     data () {
         return {
-            switch: false,
+            switchVal: false,
             spinShow: true,
         }
     },
     methods: {
         onSwitchChange ({ detail }) {
             const value = detail.value
-            this.switch = value
+            this.switchVal = value
             this.spinShow = !value
         },
     },
