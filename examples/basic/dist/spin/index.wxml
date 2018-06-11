@@ -1,0 +1,6 @@
+<view class="i-class i-spin i-spin-{{ size }} {{ fix ? 'i-spin-fix' : '' }} {{ custom ? 'i-spin-show-text' : '' }} {{ fullscreen ? 'i-spin-fullscreen' : '' }}">
+    <div class="i-spin-main">
+        <view class="i-spin-dot"></view>
+        <div class="i-spin-text"><slot></slot></div>
+    </div>
+</view>

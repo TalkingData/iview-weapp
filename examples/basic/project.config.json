@@ -12,7 +12,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
-	"appid": "wx78bf0b9dc6e371c7",
+	"appid": "touristappid",
 	"projectname": "iview-weapp",
 	"isGameTourist": true,
 	"condition": {
