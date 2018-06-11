@@ -55,11 +55,11 @@ export default {
     },
     methods: {
         handleFruitChange ({ detail = {} }) {
-            const index = this.data.current.indexOf(detail.value)
+            const index = this.current.indexOf(detail.value)
             index === -1
-                ? this.data.current.push(detail.value)
-                : this.data.current.splice(index, 1)
-            this.current = this.data.current
+                ? this.current.push(detail.value)
+                : this.current.splice(index, 1)
+            this.current = this.current
         },
         handleClick () {
             this.position = this.position.indexOf('left') !== -1
@@ -67,7 +67,7 @@ export default {
                 : 'left'
         },
         handleDisabled () {
-            this.disabled = !this.data.disabled
+            this.disabled = !this.disabled
         },
         handleAnimalChange ({ detail = {} }) {
             this.checked = detail.current

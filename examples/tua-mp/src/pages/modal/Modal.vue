@@ -151,7 +151,7 @@ export default {
             if (detail.index === 0) {
                 this.visible5 = false
             } else {
-                const action = [...this.data.actions5]
+                const action = [...this.actions5]
                 action[1].loading = true
 
                 this.actions5 = action

@@ -25,7 +25,7 @@
     <i-panel title="基础组件">
         <i-cell-group>
             <i-cell title="Button 按钮" is-link url="/pages/button/button"></i-cell>
-            <i-cell title="Color 色彩" is-link url="/pages/color/button"></i-cell>
+            <i-cell title="Color 色彩" is-link url="/pages/color/color"></i-cell>
             <i-cell title="Icon 图标" is-link url="/pages/icon/icon"></i-cell>
         </i-cell-group>
     </i-panel>

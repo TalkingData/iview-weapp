@@ -58,9 +58,9 @@ export default {
             const type = detail.type
 
             if (type === 'next') {
-                this.current = this.data.current + 1
+                this.current += 1
             } else if (type === 'prev') {
-                this.current = this.data.current - 1
+                this.current -= 1
             }
         },
     },

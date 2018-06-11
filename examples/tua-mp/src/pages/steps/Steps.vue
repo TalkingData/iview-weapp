@@ -136,7 +136,7 @@ export default {
     },
     methods: {
         handleClick () {
-            const addCurrent = this.data.current + 1
+            const addCurrent = this.current + 1
             const current = addCurrent > 2 ? 0 : addCurrent
 
             this.current = current

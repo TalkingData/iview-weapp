@@ -57,10 +57,10 @@ export default {
             this.current = detail.value
         },
         handleClick () {
-            this.position = this.data.position.indexOf('left') !== -1 ? 'right' : 'left'
+            this.position = this.position.indexOf('left') !== -1 ? 'right' : 'left'
         },
         handleDisabled () {
-            this.disabled = !this.data.disabled
+            this.disabled = !this.disabled
         },
         handleAnimalChange ({ detail = {} }) {
             this.checked = detail.current

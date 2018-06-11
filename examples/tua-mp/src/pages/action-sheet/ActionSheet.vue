@@ -47,6 +47,7 @@ export default {
     data () {
         return {
             visible1: false,
+            visible2: false,
             actions1: [
                 {
                     name: '选项1',
@@ -102,7 +103,7 @@ export default {
         },
 
         handleClickItem2 () {
-            const action = [...this.data.actions2]
+            const action = [...this.actions2]
             action[0].loading = true
 
             this.actions2 = action

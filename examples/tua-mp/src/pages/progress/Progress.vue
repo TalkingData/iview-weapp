@@ -35,7 +35,7 @@ export default {
     handleAdd () {
         if (this.percent === 100) return
 
-        this.percent = this.data.percent + 10
+        this.percent += 10
 
         if (this.percent === 100) {
             this.status = 'success'

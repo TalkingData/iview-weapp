@@ -46,21 +46,21 @@ export default {
             showLeft1: false,
             showLeft2: false,
             showRight1: false,
-            showRigh2: false,
+            showRight2: false,
         }
     },
     methods: {
         toggleLeft1 () {
-            this.showLeft1 = !this.data.showLeft1
+            this.showLeft1 = !this.showLeft1
         },
         toggleLeft2 () {
-            this.showLeft2 = !this.data.showLeft2
+            this.showLeft2 = !this.showLeft2
         },
         toggleRight1 () {
-            this.showRight1 = !this.data.showRight1
+            this.showRight1 = !this.showRight1
         },
         toggleRight2 () {
-            this.showRight2 = !this.data.showRight2
+            this.showRight2 = !this.showRight2
         },
     },
 }

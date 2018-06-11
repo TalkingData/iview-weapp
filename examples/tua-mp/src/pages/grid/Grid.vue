@@ -86,7 +86,7 @@ export default {
     },
     methods: {
         handleAdd () {
-            this.isAdd = !this.data.isAdd
+            this.isAdd = !this.isAdd
         },
     },
 }
