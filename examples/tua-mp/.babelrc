@@ -1,0 +1,18 @@
+{
+    "comments": false,
+    "passPerPreset": true,
+    "presets": [
+        { "plugins": [ "transform-runtime" ] },
+        {
+            "passPerPreset": false,
+            "presets": [
+                ["env", {
+                    "targets": {
+                        "browsers": ["iOS > 7", "Android > 4"]
+                    }
+                }],
+                "stage-0"
+            ]
+        }
+    ]
+}

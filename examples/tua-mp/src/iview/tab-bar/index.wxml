@@ -1,0 +1,1 @@
+<view class="i-class i-tab-bar {{ fixed ? 'i-tab-bar-fixed' : '' }}"><slot></slot></view>

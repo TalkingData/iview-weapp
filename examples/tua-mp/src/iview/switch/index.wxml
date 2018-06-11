@@ -1,0 +1,26 @@
+<view class="i-class i-switch {{parse.setSize(size)}} {{parse.setCurrent(value,disabled)}}" bindtap="toggle">
+    <input type="text" :name="name" wx:value="{{value}}" class="i-switch-hide-input"></input>
+    <view class="i-switch-inner" wx:if="{{value === true}}">
+        <slot name="open"></slot>
+    </view>
+    <view class="i-switch-inner" wx:else>
+        <slot name="close"></slot>
+    </view>
+</view>
+<wxs module="parse">
+var sizes = ['large', 'default'];
+var prefixCls = 'i-switch';
+module.exports = {
+    setSize : function( size ){
+        var index = sizes.indexOf( size );
+        return prefixCls + ( index > -1 ? ( '-'+size ) : 'default' )
+    },
+    setCurrent : function( value,disabled ){
+        var className = value && !disabled ? prefixCls + '-checked' : '';
+        if( disabled ){
+            className += ' ' + prefixCls + '-disabled';
+        }
+        return className;
+    }
+}
+</wxs>

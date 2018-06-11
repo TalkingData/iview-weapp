@@ -1,0 +1,1 @@
+.i-checkbox-cell::after{display:block}.i-checkbox-checkbox-left{float:left}.i-checkbox-checkbox-right{float:right}.i-checkbox-radio{vertical-align:middle}.i-checkbox-title{display:inline-block;vertical-align:middle}

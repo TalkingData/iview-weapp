@@ -1,0 +1,9 @@
+<view wx:if="{{ show }}" class="i-class i-noticebar">
+    <i-icon wx:if="{{ icon }}" type="{{ icon }}" size="24" color="#f76a24" class="i-noticebar-icon"></i-icon>
+    <view class="i-noticebar-content-wrap">
+        <view class="i-noticebar-content {{loop?'i-noticebar-content-loop':''}}" animation="{{ animationData }}">
+           <slot></slot>
+        </view>
+    </view>
+    <i-icon wx:if="{{closable}}" class="i-noticebar-operation" type="close" size="20" color="#f76a24" bindtap="handleClose"></i-icon>
+</view>
