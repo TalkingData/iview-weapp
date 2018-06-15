@@ -27,7 +27,7 @@ Page({
     onChange5(e){
         const index = e.detail.index;
         this.setData({
-            'onChange5' : index
+            'starIndex5' : index
         })
     }
 });

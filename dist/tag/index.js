@@ -1,11 +1,6 @@
 Component({
     externalClasses: ['i-class'],
     properties : {
-        //close button show or not;
-        closable : {
-            type : Boolean,
-            value : false
-        },
         //slot name
         name : {
             type : String,

@@ -1,4 +1,5 @@
-<view class="i-class i-rate" bindtouchmove="handleTouch">
+<view class="i-class i-rate" 
+    bindtouchmove="handleTouchMove">
     <input type="text" :name="name" wx:value="{{value}}" class="i-rate-hide-input" />
     <view
         wx:for="{{count}}"

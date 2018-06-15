@@ -2,33 +2,34 @@
 <i-cell-group>
     <i-cell title="基本用法">
         <i-rate 
-            bindchange="onChange1" 
+            bind:change="onChange1" 
             value="{{starIndex1}}">
         </i-rate>
     </i-cell>
     <i-cell title="自定义星星个数">
-        <i-rate 
+        <i-rate
+            bind:change="onChange5"
             count="{{10}}"
             value="{{starIndex5}}">
         </i-rate>
     </i-cell>
     <i-cell title="自定义星星大小">
         <i-rate 
-            bindchange="onChange2" 
+            bind:change="onChange2" 
             value="{{starIndex2}}" 
             size="32">
         </i-rate>
     </i-cell>
     <i-cell title="自定义文字说明">
         <i-rate 
-            bindchange="onChange2" 
+            bind:change="onChange2" 
             value="{{starIndex2}}">
             {{starIndex2}}星
         </i-rate>
     </i-cell>
      <i-cell title="手势touch选择星">
         <i-rate 
-            bindchange="onChange3" 
+            bind:change="onChange3" 
             value="{{starIndex3}}">
             {{starIndex3}}星
         </i-rate>

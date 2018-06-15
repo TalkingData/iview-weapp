@@ -1,22 +1,22 @@
 Component({
     externalClasses: ['i-class'],
     properties: {
-        show: {
+        visible: {
             type: Boolean,
             value: false
         },
 
-        overlay: {
+        mask: {
             type: Boolean,
             value: true
         },
 
-        closeOverlay: {
+        maskClosable: {
             type: Boolean,
             value: true
         },
 
-        type: {
+        mode: {
             type: String,
             value: 'left' // left right
         }
@@ -24,7 +24,7 @@ Component({
     data: {},
     methods: {
         handleMaskClick() {
-            if (!this.data.closeOverlay) {
+            if (!this.data.maskClosable) {
                 return;
             }
             this.triggerEvent('close', {});

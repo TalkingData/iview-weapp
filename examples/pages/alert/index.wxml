@@ -10,7 +10,7 @@
 <i-alert type="error">
     An error prompt
 </i-alert>
-<i-alert>
+<i-alert type="info">
     An info prompt
     <view slot="desc">Content of prompt. Content of prompt.</view>
 </i-alert>
@@ -26,7 +26,7 @@
     An error prompt
     <view slot="desc">Content of prompt. Content of prompt.</view>
 </i-alert>
-<i-alert show-icon>
+<i-alert type="info" show-icon>
     An info prompt
 </i-alert>
 <i-alert type="success" show-icon>

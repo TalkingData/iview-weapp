@@ -7,8 +7,7 @@ Component({
         //info, success, warning, error
         type: {
             type: String,
-            value: 'info',
-            observer: 'setIconType'
+            value: 'info'
         },
         closable: {
             type: Boolean,
@@ -24,31 +23,9 @@ Component({
         },
     },
     data: {
-        closed: false,
-        iconType: '',
+        closed: false
     },
     methods: {
-        setIconType() {
-            let type = '';
-
-            switch (this.data.type) {
-                case 'success':
-                    type = 'success';
-                    break;
-                case 'info':
-                    type = 'prompt';
-                    break;
-                case 'warning':
-                    type = 'warning';
-                    break;
-                case 'error':
-                    type = 'delete';
-                    break;
-            }
-            this.setData({
-                iconType: type
-            });
-        },
         handleTap() {
             this.setData({
                 closed: !this.data.closed,
