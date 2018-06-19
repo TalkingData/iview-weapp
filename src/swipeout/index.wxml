@@ -8,9 +8,9 @@
             catchtouchend="loop" >
             <view class="i-swipeout-button-right-item" 
                 wx:for="{{actions}}" 
-                style="{{parse.setStyle(item)}}" 
+                style="{{parse.setStyle(item)}};width:{{item.width}}px;" 
                 wx:key="{{index}}" 
-                data-index="{{index}}"                 
+                data-index="{{index}}" 
                 bind:tap="handlerButton">
                 <i-icon 
                     wx:if="{{item.icon}}" 

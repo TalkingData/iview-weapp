@@ -1,6 +1,9 @@
 <view class="i-swipeout-demo">
     <view class="i-swipeout-demo-title">基础用法</view>
-    <view class="i-swipeout-demo-des">注: 设置uncloseable为true时点击按钮不能关闭,必须联合toggle2来实现</view>
+    <view class="i-swipeout-demo-des">
+        注: 1、设置uncloseable为true时点击按钮不能关闭,必须联合toggle2来实现
+        2、如果传递action的话必须传递width来设置每个按钮的宽度
+    </view>
     <i-swipeout  i-class="i-swipeout-demo-item" actions="{{actions}}">
         <view slot="content">
             <i-cell 
@@ -10,11 +13,20 @@
             </i-cell>
         </view>
     </i-swipeout>
+    <i-swipeout  i-class="i-swipeout-demo-item" actions="{{actions}}" toggle="{{toggle2}}" unclosable="{{true}}">
+        <view slot="content">
+            <i-cell 
+                i-class="i-cell-padding" 
+                title="点击按钮不可关闭" 
+                label="侏罗纪世界主题公园及豪华度假村被失控的恐龙们摧毁已有四年">
+            </i-cell>
+        </view>
+    </i-swipeout>
     <i-swipeout  i-class="i-swipeout-demo-item" actions="{{actions}}" toggle="{{toggle2}}" unclosable="{{true}}" bindchange="handlerCloseButton">
         <view slot="content">
             <i-cell 
                 i-class="i-cell-padding" 
-                title="侏罗纪世界2" 
+                title="可点击按钮关闭" 
                 label="侏罗纪世界主题公园及豪华度假村被失控的恐龙们摧毁已有四年">
             </i-cell>
         </view>
@@ -22,7 +34,7 @@
 
 
     <view class="i-swipeout-demo-title">自定义右侧Button</view>
-    <view class="i-swipeout-demo-des">注: 自定义右侧必须设置固定宽度</view>
+    <view class="i-swipeout-demo-des">注: 右侧必须设置固定宽度。默认宽度160px</view>
     <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="{{210}}">
         <view slot="content">
             <i-cell 

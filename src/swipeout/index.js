@@ -9,10 +9,6 @@ function swipeDirection(x1, x2, y1, y2) {
 
 Component({
     externalClasses: ['i-class'],
-    options: {
-        // 在组件定义时的选项中启用多slot支持
-        multipleSlots: true
-    },
     properties: {
         actions: {
             value: [],
@@ -33,6 +29,10 @@ Component({
             value : 160
         }
     },
+    options: {
+        // 在组件定义时的选项中启用多slot支持
+        multipleSlots: true
+    },
     data : {
         //touch start position
         tStart : {
@@ -51,17 +51,29 @@ Component({
         //阻止事件冒泡
         loop(){},
         _updateButtonSize(){
-            if( this.data.actions.length > 0 ){
+            const actions = this.data.actions;
+            if( actions.length > 0 ){
                 const query = wx.createSelectorQuery().in(this);
                 let limitMovePosition = 0;
-                query.selectAll('.i-swipeout-button-right-item').boundingClientRect((rects)=>{
-                    if( rects ){
-                        rects.forEach(item => {
-                            limitMovePosition += item.width;
-                        });
-                        this.data.limitMove = limitMovePosition;
-                    }
-                }).exec()
+                actions.forEach(item => {
+                    limitMovePosition += item.width || 0;
+                });
+                this.data.limitMove = limitMovePosition;
+                /*
+                    * 动态获取每个传进值的按钮尺寸不能正确获取，在安卓上少了6px
+                    * 暂时实现需要在actions里面传递宽度
+                    * 需要后期调研
+                */
+                //query.selectAll('.i-swipeout-button-right-item').boundingClientRect((rects)=>{
+                //     if( rects ){
+                //         console.log(rects,1111111)
+                //         rects.forEach(item => {
+                //             limitMovePosition += item.width;
+                //         });
+                //         this.data.limitMove = limitMovePosition;
+                //         console.log(limitMovePosition,111111111)
+                //     }
+                // }).exec()
             }else{
                 this.data.limitMove = this.data.operateWidth;
                 
