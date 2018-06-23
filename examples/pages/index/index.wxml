@@ -44,6 +44,7 @@
         <i-cell title="Tag 标签" is-link url="/pages/tag/index"></i-cell>
         <i-cell title="Progress 进度条" is-link url="/pages/progress/index"></i-cell>
         <i-cell title="Avatar 头像" is-link url="/pages/avatar/index"></i-cell>
+        <i-cell title="countDown 倒计时" is-link url="/pages/count-down/index"></i-cell>
     </i-cell-group>
 </i-panel>
 <i-panel title="表单">
