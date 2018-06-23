@@ -3,7 +3,8 @@ Component({
     target: Number,
     showDay: Boolean,
     callback: String,
-    format: Array
+    format: Array,
+    clearTimer: Boolean
   },
   externalClasses: ['countdown-class'],
   data: {
@@ -60,7 +61,7 @@ Component({
         if (data.changeFormat) time = `${hour}${format[1]}${minute}${format[2]}${second}${format[3]}`;
         else time = `${hour}:${minute}:${second}`;
 
-        this.init.call(this);
+        if (!data.clearTimer) this.init.call(this);
       } else {
         this.endfn();
       }
@@ -74,7 +75,6 @@ Component({
       } else {
         result = time;
       }
-
       this.setData({
         time: result
       });
