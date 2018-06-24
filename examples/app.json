@@ -30,9 +30,7 @@
     "pages/tab-bar/index",
     "pages/tabs/index",
     "pages/tag/index",
-    "pages/toast/index",
-    "pages/swipeout/index",
-    "pages/count-down/index"
+    "pages/toast/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
