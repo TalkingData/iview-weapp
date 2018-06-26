@@ -25,6 +25,7 @@
         <i-cell title="Page 分页" is-link url="/pages/page/index"></i-cell>
         <i-cell title="Steps 步骤条" is-link url="/pages/steps/index"></i-cell>
         <i-cell title="NoticeBar 通告栏" is-link url="/pages/notice-bar/index"></i-cell>
+        <i-cell title="index 索引选择器" is-link url="/pages/index-item/index"></i-cell>
     </i-cell-group>
 </i-panel>
 <i-panel title="操作反馈">

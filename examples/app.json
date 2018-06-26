@@ -33,7 +33,8 @@
     "pages/toast/index",
     "pages/swipeout/index",
     "pages/count-down/index",
-    "pages/divider/index"
+    "pages/divider/index",
+    "pages/index-list/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
