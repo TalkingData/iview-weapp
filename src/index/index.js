@@ -120,7 +120,10 @@ Component({
             let index = Math.ceil( rest/data.itemHeight );
             index = index >= data.itemLength ? data.itemLength -1 : index;
             const movePosition = this.getCurrentItem(index);
-            
+
+            //微信震动事件
+            wx.vibrateShort();
+
             this.setData({
                 scrollTop : movePosition.top,
                 currentName : movePosition.name,
