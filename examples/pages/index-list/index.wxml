@@ -4,7 +4,7 @@
             wx:for="{{ cities }}" 
             wx:for-index="index" 
             wx:key="{{index}}" 
-            wx:for-item="item" wx:key="" name="{{item.key}}">
+            wx:for-item="item" name="{{item.key}}">
             <view 
                 class="i-index-demo-item" 
                 wx:for="{{item.list}}" 

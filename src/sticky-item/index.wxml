@@ -1,0 +1,10 @@
+<view class="i-sticky-item">
+    <view class="i-sticky-item-header i-class {{ isFixed === true ? 'i-sticky-fixed' : '' }}">
+        <view class="i-sticky-title">
+            <slot name="title"></slot>
+        </view>
+    </view>
+    <view class="i-index-item-content">
+        <slot name="content"></slot>
+    </view>
+</view>
