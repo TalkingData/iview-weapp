@@ -103,6 +103,9 @@ Component({
             result.total = indexItems.length;
             return result;
         },
+        triggerCallback(options){
+            this.triggerEvent('change',options)
+        },
         handlerFixedTap(event){
             const eindex = event.currentTarget.dataset.index;
             const item = this.getCurrentItem(eindex);
@@ -110,6 +113,10 @@ Component({
                 scrollTop : item.top,
                 currentName : item.currentName,
                 isTouches : true
+            })
+            this.triggerCallback({
+                index : eindex,
+                current : item.currentName
             })
         },
         handlerTouchMove(event){
@@ -128,6 +135,11 @@ Component({
                 scrollTop : movePosition.top,
                 currentName : movePosition.name,
                 isTouches : true
+            })
+
+            this.triggerCallback({
+                index : index,
+                current : movePosition.name
             })
         },
         handlerTouchEnd(){

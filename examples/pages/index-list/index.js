@@ -3,6 +3,9 @@ Page({
     data : {
         cities : []
     },
+    onChange(event){
+        console.log(event.detail,'click right menu callback data')
+    },
     onReady(){
         let storeCity = new Array(26);
         const words = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]

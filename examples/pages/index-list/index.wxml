@@ -1,5 +1,5 @@
 <view class="i-index-demo">
-    <i-index height="100%">
+    <i-index height="100%" bind:change="onChange">
         <i-index-item 
             wx:for="{{ cities }}" 
             wx:for-index="index" 
