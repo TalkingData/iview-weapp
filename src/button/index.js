@@ -7,6 +7,10 @@ Component({
             type: String,
             value: '',
         },
+        inline: {
+            type: Boolean,
+            value: false
+        },
         // default, large, small
         size: {
             type: String,
