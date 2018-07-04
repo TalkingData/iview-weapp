@@ -11,5 +11,9 @@
     send-message-path="{{ sendMessagePath }}"
     send-message-img="{{ sendMessageImg }}"
     show-message-card="{{ showMessageCard }}"
+    bindcontact="bindcontact"
+    bindgetuserinfo="bindgetuserinfo"
+    bindgetphonenumber="bindgetphonenumber"
+    binderror="binderror"
     plain="true"
 ><view class="i-btn-loading-inner" wx:if="{{loading}}"></view><slot></slot></button>
