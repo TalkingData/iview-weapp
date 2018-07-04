@@ -17,6 +17,21 @@ Component({
         loop: {
             type: Boolean,
             value: false
+        },
+        // 背景颜色
+        backgroundcolor: {
+            type: String,
+            value: '#fefcec'
+        },
+        // 字体及图标颜色
+        color: {
+            type: String,
+            value: '#f76a24'
+        },
+        // 滚动速度
+        speed: {
+            type: Number,
+            value: 1000
         }
     },
 
@@ -41,7 +56,7 @@ Component({
         initAnimation() {
             wx.createSelectorQuery().in(this).select('.i-noticebar-content-wrap').boundingClientRect((wrapRect) => {
                 wx.createSelectorQuery().in(this).select('.i-noticebar-content').boundingClientRect((rect) => {
-                    const duration = rect.width / 40 * 1000;
+                    const duration = rect.width / 40 * this.data.speed;
                     const animation = wx.createAnimation({
                         duration: duration,
                         timingFunction: "linear",
