@@ -128,8 +128,13 @@ Component({
             index = index >= data.itemLength ? data.itemLength -1 : index;
             const movePosition = this.getCurrentItem(index);
 
-            //微信震动事件
-            wx.vibrateShort();
+           /*
+            * 当touch选中的元素和当前currentName不相等的时候才震动一下
+            * 微信震动事件
+           */
+            if( movePosition.name !== this.data.currentName ){
+                wx.vibrateShort();
+            }
 
             this.setData({
                 scrollTop : movePosition.top,
