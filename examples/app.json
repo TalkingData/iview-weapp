@@ -34,7 +34,8 @@
     "pages/swipeout/index",
     "pages/count-down/index",
     "pages/divider/index",
-    "pages/index-list/index"
+    "pages/index-list/index",
+    "pages/collapse/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FAFAFA",
