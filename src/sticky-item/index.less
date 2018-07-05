@@ -1,0 +1,27 @@
+@import "../styles/_base.less";
+@import "../styles/_mixins.less";
+
+.i-sticky{
+    &-item-header{
+        background: #eee;
+        font-size: 14px;
+        width: 100%;
+        height: 32px;
+        line-height: 32px;
+    }
+    &-item-content{
+        font-size: 14px;
+    }
+    &-title{
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+        background: #eee;
+    }
+    &-fixed{
+        .i-sticky-title{
+            position: fixed;
+            top: 0;
+        }
+    }
+}
