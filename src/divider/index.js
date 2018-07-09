@@ -11,11 +11,11 @@ Component({
         },
         color : {
             type : String,
-            value : '#333'
+            value : '#80848f'
         },
         lineColor : {
             type : String,
-            value : '#f7f7f7'
+            value : '#e9eaec'
         },
         size : {
             type: String,
