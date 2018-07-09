@@ -1,10 +1,6 @@
 Component({
     externalClasses: ['i-class'],
     properties : {
-        current : {
-            type : String,
-            value : ''
-        },
         height : {
             type : String,
             value : '300'
@@ -13,9 +9,6 @@ Component({
             type : Number,
             value : 18
         }
-    },
-    options: {
-        multipleSlots: true
     },
     relations : {
         '../index-item/index' : {
