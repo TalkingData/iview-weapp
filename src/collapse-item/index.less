@@ -1,24 +1,32 @@
+@import "../styles/_base.less";
+@import "../styles/_mixins.less";
 
-.collapse-item{
-  padding: 2px 8px;
-  border-top: 1px solid #ccc;
-}
+.i-collapse-item {
+    padding: 2px 8px;
+    border-top: 1px solid @border-color-base;
 
-.title-wrap{
-  padding: 2px 0 0px
-}
+    &-title{
+        vertical-align: middle;
+        &-wrap{
+            padding: 2px 0 0;
+        }
+    }
 
-.item-title{
-  vertical-align: middle;
-}
+    &-content{
+        padding: 6px;
+        display: none;
+    }
 
+    &-show-content{
+        display: block;
+    }
 
-.item-content {
-  padding: 6px;
-  display: none;
-}
-
-.show-content{
-  display: block;
+    &-arrow{
+        transition: transform @transition-time @ease-in-out;
+        &-show{
+            transition: transform @transition-time @ease-in-out;
+            transform: rotate(90deg);
+        }
+    }
 }
 
