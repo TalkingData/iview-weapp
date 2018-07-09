@@ -1,5 +1,5 @@
 Component({
-    externalClasses: ['i-class-content', 'i-class-title'],
+    externalClasses: ['i-class-content', 'i-class-title', 'i-class'],
 
     relations: {
         '../collapse/index': {
