@@ -1,6 +1,5 @@
 <i-grid>
     <view class="icon-item" wx:for="{{ list }}" wx:key="{{ item }}">
->>>>>>> 00b71726fc40652d61d0401cd3cf8fc17095bab5
         <i-icon type="{{ item }}" size="28" color="#80848f"></i-icon>
         <view class="icon-item-name">{{ item }}</view>
     </view>
