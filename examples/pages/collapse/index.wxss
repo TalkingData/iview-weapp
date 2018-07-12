@@ -1,0 +1,22 @@
+
+.caption-wrap{
+  margin-bottom: 30px;
+}
+
+.caption-title{
+  font-weight: bold;
+  padding:20px 10px;
+}
+
+.collapse-item-title{
+  font-size: 12px;
+  color: #737373;
+  font-weight: bold;
+}
+
+.collapse-item-content{
+  font-size: 14px;
+  color: #444444;
+}
+
+

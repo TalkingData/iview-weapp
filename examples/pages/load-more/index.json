@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "LoadMore 页底提示",
+  "usingComponents": {
+    "i-load-more": "../../dist/load-more/index"
+  }
+}
