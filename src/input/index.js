@@ -1,7 +1,7 @@
 Component({
     behaviors: ['wx://form-field'],
 
-    externalClasses: ['i-class'],
+    externalClasses: ['i-class', 'i-placeholder-class'],
 
     properties: {
         title: {
@@ -17,6 +17,10 @@ Component({
             value: false
         },
         placeholder: {
+            type: String,
+            value: ''
+        },
+        placeholderStyle: {
             type: String,
             value: ''
         },
