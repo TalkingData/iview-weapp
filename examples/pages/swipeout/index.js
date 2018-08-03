@@ -6,6 +6,7 @@ Page({
         //小程序没有refs，所以只能用动态布尔值控制关闭
         toggle : false,
         toggle2 : false,
+        toggle3 : false,
         actions2: [
             {
                 name: '删除',
@@ -64,5 +65,10 @@ Page({
         this.setData({
             visible2: true
         });
+    },
+    toggleButton() { // 因为是watch toggle3 的变化，所以点击其他地方隐藏右侧的button时需要点击两次才能拉出来
+        this.setData({
+            toggle3: !this.data.toggle3
+        })
     }
 });

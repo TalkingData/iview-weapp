@@ -101,4 +101,17 @@
            </view>
         </view>
     </i-swipeout>
+
+    <view class="i-swipeout-demo-title">点击删除按钮toggle</view>
+    <i-swipeout  i-class="i-swipeout-demo-item" actions="{{actions}}" toggle="{{toggle3}}">
+        <view slot="content">
+           <view class="i-swipeout-image" style="background:#ed3f14;" bindtap="toggleButton" >
+                <i-icon size="20" color="#FFFFFF" type="delete_fill" />
+           </view>
+           <view class="i-swipeout-des">
+                <view class="i-swipeout-des-h2">第七个小矮人</view>
+                <view class="i-swipeout-des-detail">乐观善良的7个小矮人原本过着简单快乐的生活，不料诅咒公主的巫婆利用小矮人进入.</view>
+           </view>
+        </view>
+    </i-swipeout>
 </view>

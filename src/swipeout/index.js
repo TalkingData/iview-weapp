@@ -22,7 +22,7 @@ Component({
         toggle : {
             value : false,
             type : Boolean,
-            observer : 'closeButtonGroup'
+            observer : 'toggleButtonGroup'
         },
         operateWidth : {
             type : Number,
@@ -153,6 +153,12 @@ Component({
             if( !this.data.unclosable ){
                 this.closeButtonGroup();
             }
+        },
+        toggleButtonGroup(event) {
+            let pageX = this.data.toggle ? - this.data.limitMove : 0
+            this.setData({
+                'position': {pageX, pageY: 0}
+            })
         }
     },
     ready(){
