@@ -1,5 +1,5 @@
 Component({
-    externalClasses: ['i-class'],
+    externalClasses: ["i-class"],
 
     options: {
         multipleSlots: true
@@ -12,15 +12,23 @@ Component({
         },
         thumb: {
             type: String,
-            value: ''
+            value: ""
         },
         title: {
             type: String,
-            value: ''
+            value: ""
         },
         extra: {
             type: String,
-            value: ''
+            value: ""
+        },
+        icon: {
+            type: String,
+            value: ""
+        },
+        size: {
+            type: Number,
+            value: 14
         }
     }
 });
