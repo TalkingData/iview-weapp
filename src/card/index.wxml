@@ -3,8 +3,8 @@
         <view class="i-card-header-content">
             <image class="i-card-header-thumb" src="{{ thumb }}" mode="aspectFit" wx:if="{{ thumb }}" /> {{ title }}
         </view>
-        <view class="i-card-header-extra" wx:if="{{ extra }}">{{ extra }}</view>
-        <view class="i-card-header-extra" wx:if="{{ icon }}">
+        <view class="i-card-header-extra" wx:if="{{extra}}" style="color:{{color.extraColor(extraColor)}};">{{ extra }}</view>
+        <view class="i-card-header-icon" wx:if="{{ icon }}">
             <i-icon type="{{icon}}" size="{{size}}" />
         </view>
     </view>
@@ -15,3 +15,6 @@
         <slot name="footer"></slot>
     </view>
 </view>
+<wxs module="color">
+    var extraColor = function(color) { return color }; module.exports.extraColor = extraColor;
+</wxs>

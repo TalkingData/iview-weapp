@@ -10,24 +10,24 @@
     border: 1rpx solid @border-color-base;
     border-radius: 5px;
 
-    &-full{
+    &-full {
         margin: 0;
         border-left: none;
         border-right: none;
         border-radius: 0;
     }
 
-    &-header{
+    &-header {
         display: flex;
         padding: 6px 16px;
         align-items: center;
 
-        &-content{
+        &-content {
             flex: 1;
             text-align: left;
         }
 
-        &-thumb{
+        &-thumb {
             display: inline-block;
             width: 64px;
             height: 64px;
@@ -38,33 +38,39 @@
             background-size: cover;
             vertical-align: middle;
         }
-        &-title{
+        &-title {
             display: inline-block;
             vertical-align: middle;
             font-size: @size-font-base;
             color: @title-color;
         }
-        &-extra{
+        &-extra {
             flex: 1;
+            text-align: right;
+            font-size: @size-font-base;
+            color: @subsidiary-color;
+        }
+        &-icon {
+            flex: 0 0 20px;
             text-align: right;
             font-size: @size-font-base;
             color: @subsidiary-color;
         }
     }
 
-    &-body{
+    &-body {
         position: relative;
         padding: 6px 16px;
         color: @text-color;
         font-size: @size-font-base;
 
-        &::before{
+        &::before {
             .hairline();
             border-top-width: 1px;
         }
     }
 
-    &-footer{
+    &-footer {
         position: relative;
         padding: 6px 16px;
         color: @subsidiary-color;

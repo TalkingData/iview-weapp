@@ -29,6 +29,10 @@ Component({
         size: {
             type: Number,
             value: 14
+        },
+        extraColor: {
+            type: String,
+            value: ""
         }
     }
 });
