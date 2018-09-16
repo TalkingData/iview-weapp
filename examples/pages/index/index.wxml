@@ -25,15 +25,18 @@
         <i-cell title="Page 分页" is-link url="/pages/page/index"></i-cell>
         <i-cell title="Steps 步骤条" is-link url="/pages/steps/index"></i-cell>
         <i-cell title="NoticeBar 通告栏" is-link url="/pages/notice-bar/index"></i-cell>
+        <i-cell title="Index 索引选择器" is-link url="/pages/index-list/index"></i-cell>
+        <i-cell title="Sticky 吸顶容器" is-link url="/pages/sticky/index"></i-cell>
     </i-cell-group>
 </i-panel>
 <i-panel title="操作反馈">
     <i-cell-group>
-        <i-cell title="ActionSheer 动作面板" is-link url="/pages/action-sheet/index"></i-cell>
+        <i-cell title="ActionSheet 动作面板" is-link url="/pages/action-sheet/index"></i-cell>
         <i-cell title="Toast 轻提示" is-link url="/pages/toast/index"></i-cell>
         <i-cell title="Modal 对话框" is-link url="/pages/modal/index"></i-cell>
         <i-cell title="Message 全局提醒" is-link url="/pages/message/index"></i-cell>
         <i-cell title="Spin 加载中" is-link url="/pages/spin/index"></i-cell>
+        <i-cell title="Swipeout 滑动菜单" is-link url="/pages/swipeout/index"></i-cell>
     </i-cell-group>
 </i-panel>
 <i-panel title="视图">
@@ -43,6 +46,10 @@
         <i-cell title="Tag 标签" is-link url="/pages/tag/index"></i-cell>
         <i-cell title="Progress 进度条" is-link url="/pages/progress/index"></i-cell>
         <i-cell title="Avatar 头像" is-link url="/pages/avatar/index"></i-cell>
+        <i-cell title="CountDown 倒计时" is-link url="/pages/count-down/index"></i-cell>
+        <i-cell title="Divider 分隔符" is-link url="/pages/divider/index"></i-cell>
+        <i-cell title="Collapse 折叠面板" is-link url="/pages/collapse/index"></i-cell>
+        <i-cell title="LoadMore 页底提示" is-link url="/pages/load-more/index"></i-cell>
     </i-cell-group>
 </i-panel>
 <i-panel title="表单">
@@ -55,3 +62,6 @@
         <i-cell title="InputNumber 数字输入框" is-link url="/pages/input-number/index"></i-cell>
     </i-cell-group>
 </i-panel>
+<view style="margin-top: 16px">
+    <ad unit-id="adunit-afe5e164cf94a7aa"></ad>
+</view>

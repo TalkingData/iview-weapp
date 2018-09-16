@@ -12,9 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.98",
-	"appid": "wx78bf0b9dc6e371c7",
+	"appid": "wx307a52ca028d3c07",
 	"projectname": "iview-weapp",
-	"isGameTourist": true,
 	"condition": {
 		"search": {
 			"current": -1,

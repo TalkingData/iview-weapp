@@ -1,0 +1,39 @@
+<view class="i-swipeout-wrap i-class">
+    <view class="i-swipeout-item" bindtouchstart="handlerTouchstart" bindtouchmove="handlerTouchmove" bindtouchend="handlerTouchend" style="{{parse.setPosition(position)}}">
+        <view class="i-swipeout-content">
+            <slot name="content"></slot>
+        </view>
+        <view class="i-swipeout-button-right-group" 
+            wx:if="{{actions.length > 0}}" 
+            catchtouchend="loop" >
+            <view class="i-swipeout-button-right-item" 
+                wx:for="{{actions}}" 
+                style="{{parse.setStyle(item)}};width:{{item.width}}px;" 
+                wx:key="{{index}}" 
+                data-index="{{index}}" 
+                bind:tap="handlerButton">
+                <i-icon 
+                    wx:if="{{item.icon}}" 
+                    type="{{item.icon}}" 
+                    size="{{item.fontsize}}"
+                    color="{{item.color}}">
+                </i-icon>
+                {{item.name}}
+            </view>
+        </view>
+        <view class="i-swipeout-button-right-group" catchtouchend="loop" bind:tap="handlerParentButton"  wx:if="{{actions.length === 0}}" style="width:{{operateWidth}}px;right:-{{operateWidth}}px;">
+            <slot name="button"></slot>
+        </view>
+    </view>
+</view>
+<wxs module="parse">
+    module.exports = {
+        setStyle : function( item ){
+            var defaults = '#f7f7f7';
+            return 'background:' + ( item.background ? item.background : defaults ) +';' + 'color:'+ item.color;
+        },
+        setPosition : function( position ){
+            return 'transform:translate(' + position.pageX + 'px,0);';
+        }
+    }
+</wxs>

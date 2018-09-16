@@ -1,0 +1,39 @@
+@import "../styles/_base.less";
+@import "../styles/_mixins.less";
+@switch-prefix-cls: ~"i-swipeout";
+.@{switch-prefix-cls} {
+    &-wrap{
+        border-bottom: @border-color-base solid 1px;
+        background: @tooltip-color;
+        position: relative;
+        overflow: hidden;
+    }
+    &-item{
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        transition: transform .2s ease;
+        font-size: 14px;
+    }
+    &-content{
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &-button-right-group{
+        position: absolute;
+        right: -100%;
+        top:0;
+        height: 100%;
+        z-index: 1;
+        width: 100%;
+    }
+    &-button-right-item{
+        height: 100%;
+        float: left;
+        white-space: nowrap;
+        box-sizing: border-box;
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}

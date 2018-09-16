@@ -1,0 +1,13 @@
+.view-wrap{
+  padding: 10px 20px;
+}
+
+.type-title{
+  padding: 10px 0;
+}
+
+.big{
+  font-size: 20px;
+  color: #3399FF;
+  font-weight: bold;
+}

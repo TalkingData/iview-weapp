@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Divider 分隔符",
+  "usingComponents": {
+    "i-divider": "../../dist/divider/index"
+  }
+}

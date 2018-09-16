@@ -1,0 +1,27 @@
+@import "../styles/_base.less";
+@import "../styles/_mixins.less";
+
+.i-divider{
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-line{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 1rpx;
+        background-color: @background-color-base;
+        top: 50%;
+    }
+    &-content{
+        background: #ffffff;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 0 10px;
+    }
+}

@@ -1,5 +1,6 @@
 <button
-    class="i-class i-btn {{ long ? 'i-btn-long' : '' }} {{ 'i-btn-' + size }} {{ 'i-btn-' + type }} {{ 'i-btn-' + shape }} {{ loading ? 'i-btn-loading' : '' }} {{ disabled ? 'i-btn-disabled' : ''}}"
+    class="i-class i-btn {{ long ? 'i-btn-long' : '' }} {{ 'i-btn-' + size }} {{ 'i-btn-' + type }} {{ 'i-btn-' + shape }} {{ loading ? 'i-btn-loading' : '' }} {{ disabled ? 'i-btn-disabled' : ''}} {{ inline ? 'i-btn-inline' : '' }}"
+    hover-class="i-btn-hover"
     bindtap="handleTap"
     open-type="{{ openType }}"
     app-parameter="{{ appParameter }}"
@@ -11,5 +12,9 @@
     send-message-path="{{ sendMessagePath }}"
     send-message-img="{{ sendMessageImg }}"
     show-message-card="{{ showMessageCard }}"
+    bindcontact="bindcontact"
+    bindgetuserinfo="bindgetuserinfo"
+    bindgetphonenumber="bindgetphonenumber"
+    binderror="binderror"
     plain="true"
 ><view class="i-btn-loading-inner" wx:if="{{loading}}"></view><slot></slot></button>

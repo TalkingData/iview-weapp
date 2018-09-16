@@ -1,0 +1,55 @@
+.i-swipeout-demo-item{
+    border-bottom:#333 solid 1px;
+}
+.i-cell-padding{
+    padding:5px 0px!important;
+    font-size:14px;
+}
+.i-swipeout-demo-title{
+    height:30px;
+    padding:0 15px;
+    line-height:30px;
+    margin-top:20px;
+    margin-bottom:5px;
+}
+.i-swipeout-demo-des{
+    padding:0 15px;
+    margin-bottom:10px;
+    font-size:12px;
+    color:#ff9900;
+}
+/*左中右结构*/
+.i-swipeout-image{
+    float:left;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    border-radius:40px;
+    background: #2d8cf0;
+}
+.i-swipeout-des{
+    margin-left:50px;
+}
+.i-swipeout-des-detail{
+    font-size:12px;
+    word-break:break-all;
+    color:#80848f;
+}
+
+
+/*自定义按钮*/
+.i-swipeout-demo-button-group{
+    height:100%;
+    width:100%;
+}
+.i-swipeout-demo-button{
+    width:70px;
+    float:left;
+    display: flex;
+    height:100%;
+    justify-content: center;
+    background:#2d8cf0;
+    color:#fff;
+    align-items:center;
+}

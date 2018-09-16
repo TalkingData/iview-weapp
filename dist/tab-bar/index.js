@@ -32,20 +32,35 @@ Component({
         }
     },
 
+    data: {
+        list: []
+    },
+
     methods: {
         changeCurrent (val = this.data.current) {
             let items = this.getRelationNodes('../tab-bar-item/index');
             const len = items.length;
 
             if (len > 0) {
+                const list = [];
                 items.forEach(item => {
                     item.changeCurrent(item.data.key === val);
                     item.changeCurrentColor(this.data.color);
+                    list.push({
+                        key: item.data.key
+                    });
+                });
+                this.setData({
+                    list: list
                 });
             }
         },
         emitEvent (key) {
             this.triggerEvent('change', { key });
+        },
+        handleClickItem (e) {
+            const key = e.currentTarget.dataset.key;
+            this.emitEvent(key);
         }
     }
 });

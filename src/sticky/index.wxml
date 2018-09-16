@@ -1,0 +1,3 @@
+<view class="i-sticky i-class">
+    <slot></slot>
+</view>
