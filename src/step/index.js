@@ -44,7 +44,8 @@ Component({
                 len : options.len,
                 index : options.index,
                 current : options.current,
-                direction : options.direction
+                direction : options.direction,
+				reverse: options.reverse
             })
         }
     }

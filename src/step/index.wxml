@@ -1,10 +1,10 @@
-<view class="i-class i-step-item {{parse.getClass(status,current,index)}} {{ direction === 'vertical' ? 'i-step-vertical' : 'i-step-horizontal' }}" style="{{parse.getItemStyle(len,direction)}}">
+<view class="i-class i-step-item {{parse.getClass(status,current,index)}} {{ direction === 'vertical' ? 'i-step-vertical' : 'i-step-horizontal' }}" style="{{parse.getItemStyle(len,direction,reverse)}}">
     <view class="i-step-item-ico">
         <view class="i-step-ico" wx:if="{{parse.noIco(status,current,index,icon)  }}">{{ index+1 }}</view>
         <view class="i-step-ico" wx:else>
             <i-icon i-class="i-step-ico-in" type="{{parse.getIcoClass(status,icon)}}"></i-icon>
         </view>
-        <view class="i-step-line" wx:if="{{ index !== len - 1 }}"></view>
+        <view class="i-step-line" wx:if="{{ index !== (!reverse ? len - 1 : 0) }}"></view>
     </view>
     <view class="i-step-item-main">
         <view class="i-step-item-title" wx:if="{{title !== ''}}">
@@ -44,8 +44,8 @@ module.exports = {
         }
         return class;
     },
-    getItemStyle : function(len,direction){
-        if( direction === 'horizontal' ){
+    getItemStyle : function(len,direction,reverse){
+        if( direction === 'horizontal' && !reverse ){
             return 'width :'+100/len + '%';
         }else{
             return 'width : 100%;';
