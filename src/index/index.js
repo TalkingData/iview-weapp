@@ -117,7 +117,7 @@ Component({
             const touches = event.touches[0] || {};
             const pageY = touches.pageY;
             const rest = pageY - data.startTop;
-            let index = Math.ceil( rest/data.itemHeight );
+            let index = Math.floor( rest/data.itemHeight );
             index = index >= data.itemLength ? data.itemLength -1 : index;
             const movePosition = this.getCurrentItem(index);
 
