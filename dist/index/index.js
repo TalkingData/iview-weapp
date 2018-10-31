@@ -99,26 +99,16 @@ Component({
         triggerCallback(options){
             this.triggerEvent('change',options)
         },
-        handlerFixedTap(event){
-            const eindex = event.currentTarget.dataset.index;
-            const item = this.getCurrentItem(eindex);
-            this.setData({
-                scrollTop : item.top,
-                currentName : item.currentName,
-                isTouches : true
-            })
-            this.triggerCallback({
-                index : eindex,
-                current : item.currentName
-            })
-        },
         handlerTouchMove(event){
             const data = this.data;
             const touches = event.touches[0] || {};
             const pageY = touches.pageY;
             const rest = pageY - data.startTop;
-            let index = Math.ceil( rest/data.itemHeight );
+            let index = Math.floor( rest/data.itemHeight );
             index = index >= data.itemLength ? data.itemLength -1 : index;
+            if(index<0){
+                return ;
+            }
             const movePosition = this.getCurrentItem(index);
 
            /*
