@@ -13,7 +13,7 @@
                 wx:for="{{fixedData}}" 
                 wx:key="{{index}}" 
                 data-index="{{index}}" 
-                catchtap="handlerFixedTap">
+                >
                 {{item}}
             </view>
         </view>  
