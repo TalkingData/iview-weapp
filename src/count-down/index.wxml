@@ -1,4 +1,4 @@
-<text class="countdown-class">
+<text class="i-class">
   {{time}}
 </text>
 
