@@ -1,6 +1,11 @@
 Component({
     properties: {
-        target: Number,
+        target: {
+            type: Number,
+            observer: function(newVal, oldVal) {
+                this.getFormat()
+            }
+        },
         showDay: Boolean,
         callback: String,
         format: Array,
