@@ -1,6 +1,6 @@
-<view class="i-class i-tabs-tab {{ scroll ? 'i-tabs-tab-scroll' : '' }} {{ current ? 'i-tabs-tab-current' : '' }}">
+<view class="i-class i-tabs-tab {{ scroll ? 'i-tabs-tab-scroll' : '' }} {{ current ? 'i-tabs-tab-current' : '' }}" bindtap="handleClickItem">
     <i-badge dot="{{ dot }}" count="{{ dot ? 0 : count }}">
-        <view bindtap="handleClickItem">
+        <view>
             <view class="i-tabs-tab-title {{ current ? 'i-tabs-tab-title-current' : '' }}" wx:if="{{ current && currentColor }}" style="color: {{ currentColor }}">{{ title }}</view>
             <view class="i-tabs-tab-title {{ current ? 'i-tabs-tab-title-current' : '' }}" wx:else>{{ title }}</view>
         </view>
