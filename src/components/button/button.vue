@@ -94,21 +94,21 @@ export default {
     }
   },
   methods: {
-    handleTap () {
+    handleTap (evt) {
       if (this.disabled) return false
-      this.triggerEvent('click')
+      this.$emit('click', evt)
     },
-    bindgetuserinfo({ detail = {} } = {}) {
-      this.triggerEvent('getuserinfo', detail)
+    bindgetuserinfo(evt) {
+      this.$emit('getuserinfo', evt)
     },
-    bindcontact({ detail = {} } = {}) {
-      this.triggerEvent('contact', detail)
+    bindcontact(evt) {
+      this.$emit('contact', evt)
     },
-    bindgetphonenumber({ detail = {} } = {}) {
-      this.triggerEvent('getphonenumber', detail)
+    bindgetphonenumber(evt) {
+      this.$emit('getphonenumber', evt)
     },
-    binderror({ detail = {} } = {}) {
-      this.triggerEvent('error', detail)
+    binderror(evt) {
+      this.$emit('error', evt)
     }
   }
 }
