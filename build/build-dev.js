@@ -3,16 +3,13 @@ const { getProjectPath, cssInjection } = require('./util/projectHelper')
 const transformLess = require('./util/transformLess')
 
 const path = require('path')
-const merge2 = require('merge2');
 const through2 = require('through2')
 const gulp = require('gulp')
-const rimraf = require('rimraf')
 const destDir = getProjectPath('dist')
 
-function compile() {
-  rimraf.sync(destDir)
-  const less = gulp
-    .src(['../src/components/**/*.less'])
+gulp.task('compile-css', done => {
+  return gulp
+    .src(['../src/**/*.less'])
     .pipe(
       through2.obj(function (file, encoding, next) {
         this.push(file.clone())
@@ -33,14 +30,11 @@ function compile() {
         }
       })
     )
-    .pipe(gulp.dest(path.join(destDir, 'components')))
-  const assets = gulp
-    .src(['../assets/**/*.@(png|svg|jpg)'])
-    .pipe(gulp.dest(path.join(destDir, 'assets')))
-  const copyVue = gulp
-    .src(['../src/components/**/*.vue'])
-    .pipe(gulp.dest(path.join(destDir, 'components')))
-  const scripts = gulp
+    .pipe(gulp.dest(destDir))
+})
+
+gulp.task('compile-js', () => {
+  return gulp
     .src(['../src/**/*.js'])
     .pipe(
       through2.obj(function (file, encoding, next) {
@@ -61,12 +55,25 @@ function compile() {
       })
     )
     .pipe(gulp.dest(destDir))
-  return merge2([less, assets, copyVue, scripts])
-}
-
-gulp.task('compile-css', done => {
-  console.log('compile less ...')
-  compile().on('finish', done)
 })
 
-gulp.task('default', ['compile-css'])
+gulp.task('copy-static', () => {
+  return gulp
+    .src(['../assets/**/*.@(png|svg|jpg)'])
+    .pipe(gulp.dest(path.join(destDir, 'assets')))
+})
+
+gulp.task('copy-vue', () => {
+  return gulp
+    .src(['../src/components/**/*.vue'])
+    .pipe(gulp.dest(path.join(destDir, 'components')))
+})
+
+gulp.task('auto', () => {
+  gulp.watch('../src/**/*.js', ['compile-js'])
+  gulp.watch('../assets/**/*.@(png|svg|jpg)', ['copy-static'])
+  gulp.watch('../src/components/**/*.vue', ['copy-vue'])
+  gulp.watch('../src/**/*.less', ['compile-css'])
+})
+
+gulp.task('default', ['compile-css', 'compile-js', 'copy-vue','copy-static', 'auto'])
