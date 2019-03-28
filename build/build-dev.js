@@ -1,38 +1,72 @@
-const gulp = require('gulp');
-const less = require('gulp-less');
-const cssmin = require('gulp-clean-css');
-const rename = require('gulp-rename');
 
-gulp.task('compile-css', () => {
-    return gulp.src(['../src/**/*.less', '!../src/**/_*.less'])
-        .pipe(less())
-        .pipe(cssmin())
-        .pipe(rename((path) => {
-            path.extname = '.wxss';
-        }))
-        .pipe(gulp.dest('../examples/dist/'));
-});
+const { getProjectPath, cssInjection } = require('./util/projectHelper')
+const transformLess = require('./util/transformLess')
 
-gulp.task('compile-js', () => {
-    return gulp.src(['../src/**/*.js'])
-        .pipe(gulp.dest('../examples/dist/'));
-});
+const path = require('path')
+const merge2 = require('merge2');
+const through2 = require('through2')
+const gulp = require('gulp')
+const rimraf = require('rimraf')
+const destDir = getProjectPath('dist')
 
-gulp.task('compile-json', () => {
-    return gulp.src(['../src/**/*.json'])
-        .pipe(gulp.dest('../examples/dist/'));
-});
+function compile() {
+  rimraf.sync(destDir)
+  const less = gulp
+    .src(['../src/components/**/*.less'])
+    .pipe(
+      through2.obj(function (file, encoding, next) {
+        this.push(file.clone())
+        if (file.path.match(/(\/|\\)style(\/|\\)(.*)\.less$/)) {
+          transformLess(file.path)
+            .then(css => {
+              file.contents = Buffer.from(css)
+              file.path = file.path.replace(/\.less$/, '.css')
+              this.push(file)
+              next()
+            })
+            .catch(e => {
+              console.error(e)
+            })
+        }
+        else {
+          next()
+        }
+      })
+    )
+    .pipe(gulp.dest(path.join(destDir, 'components')))
+  const assets = gulp
+    .src(['../assets/**/*.@(png|svg|jpg)'])
+    .pipe(gulp.dest(path.join(destDir, 'assets')))
+  const copyVue = gulp
+    .src(['../src/components/**/*.vue'])
+    .pipe(gulp.dest(path.join(destDir, 'components')))
+  const scripts = gulp
+    .src(['../src/**/*.js'])
+    .pipe(
+      through2.obj(function (file, encoding, next) {
+        this.push(file.clone())
+        if (
+          file.path.match(/(\/|\\)style(\/|\\)index\.js/) ||
+          file.path.match(/(\/|\\)src(\/|\\)index\.js/)
+        ) {
+          const content = file.contents.toString(encoding)
+          file.contents = Buffer.from(cssInjection(content))
+          file.path = file.path.replace(/index\.js/, 'css.js')
+          this.push(file)
+          next()
+        }
+        else {
+          next()
+        }
+      })
+    )
+    .pipe(gulp.dest(destDir))
+  return merge2([less, assets, copyVue, scripts])
+}
 
-gulp.task('compile-wxml', () => {
-    return gulp.src(['../src/**/*.wxml'])
-        .pipe(gulp.dest('../examples/dist/'));
-});
+gulp.task('compile-css', done => {
+  console.log('compile less ...')
+  compile().on('finish', done)
+})
 
-gulp.task('auto', () => {
-    gulp.watch('../src/**/*.less', ['compile-css']);
-    gulp.watch('../src/**/*.js', ['compile-js']);
-    gulp.watch('../src/**/*.json', ['compile-json']);
-    gulp.watch('../src/**/*.wxml', ['compile-wxml']);
-});
-
-gulp.task('default', ['compile-css', 'compile-js', 'compile-json', 'compile-wxml', 'auto']);
+gulp.task('default', ['compile-css'])

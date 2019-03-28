@@ -25,12 +25,19 @@
   ],
   "homepage": "https://github.com/iview/iview-weapp",
   "devDependencies": {
+    "autoprefixer": "^9.5.0",
     "eslint": "^3.19.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.3",
     "gulp-less": "^4.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.8",
-    "less": "^2.7.3"
+    "less": "^2.7.3",
+    "less-plugin-npm-import": "^2.1.0",
+    "merge2": "^1.2.3",
+    "postcss": "^7.0.14",
+    "rimraf": "^2.6.3",
+    "rucksack-css": "^1.0.2",
+    "through2": "^3.0.1"
   }
 }

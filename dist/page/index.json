@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents":
-  {
-    "i-button": "../button/index"
-  }
-}

@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents":
-  {
-    "i-badge": "../badge/index",
-    "i-icon": "../icon/index"
-  }
-}
