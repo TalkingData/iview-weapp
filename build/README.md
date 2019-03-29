@@ -4,18 +4,19 @@
 
 ## 项目目录
 
-|—— assets // 项目静态资源
-|—— build
-|  ├── template // 快速创建目录模板
-|  ├── util // 构建公共方法
-|  ├── build-dev.js // 构建dev模式
-|  ├── build-prod.js // 构建产出模式
-|—— example // 示例目录
-|—— src
-|  ├── components 组件目录  
-|  ├── index.js // 入口文件
+|-- assets // 项目静态资源
+|-- build
+|  |-- template // 快速创建目录模板
+|  |-- util // 构建公共方法
+|  |-- build-dev.js // 构建dev模式
+|  |-- build-prod.js // 构建产出模式
+|-- example // 示例目录
+|-- src
+|  |-- components 组件目录  
+|  |-- index.js // 入口文件
 |
-|—— ...
+|-- ...
+
 
 ## 组件开发说明
 
