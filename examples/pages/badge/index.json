@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "Badge 徽章",
-  "usingComponents": {
-    "i-badge": "../../dist/badge/index"
-  }
-}

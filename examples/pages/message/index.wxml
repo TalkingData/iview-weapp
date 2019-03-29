@@ -1,8 +1,0 @@
-<view style="margin-top: 100px">
-    <i-button type="ghost" bind:click="handleDefault">默认提醒</i-button>
-    <i-button type="ghost" bind:click="handleSuccess">成功提醒</i-button>
-    <i-button type="ghost" bind:click="handleWarning">警告提醒</i-button>
-    <i-button type="ghost" bind:click="handleError">错误提醒</i-button>
-    <i-button type="ghost" bind:click="handleDuration">自定义持续时间</i-button>
-</view>
-<i-message id="message" />

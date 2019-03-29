@@ -1,8 +1,0 @@
-{
-  "navigationBarTitleText": "ActionSheet 动作面板",
-  "usingComponents": {
-    "i-action-sheet": "../../dist/action-sheet/index",
-    "i-button": "../../dist/button/index",
-    "i-message": "../../dist/message/index"
-  }
-}

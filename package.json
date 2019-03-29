@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "gulp --gulpfile build/build-dev.js",
     "build": "gulp --gulpfile build/build-prod.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "create": "node build/genTemplate.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "less": "^2.7.3",
     "less-plugin-npm-import": "^2.1.0",
     "merge2": "^1.2.3",
+    "mkdirp": "^0.5.1",
     "postcss": "^7.0.14",
     "rimraf": "^2.6.3",
     "rucksack-css": "^1.0.2",

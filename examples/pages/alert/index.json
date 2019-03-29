@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "Alert 警告提示",
-  "usingComponents": {
-    "i-alert": "../../dist/alert/index"
-  }
-}
