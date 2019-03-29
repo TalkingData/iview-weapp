@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "tag",
-  "usingComponents": {
-    "i-tag": "../../dist/tag/index"
-  }
-}

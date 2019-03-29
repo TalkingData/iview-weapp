@@ -1,5 +1,0 @@
-App({
-    globalData: {
-
-    },
-});
