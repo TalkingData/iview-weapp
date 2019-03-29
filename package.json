@@ -1,7 +1,7 @@
 {
-  "name": "iview-weapp",
-  "version": "2.0.0",
-  "description": "高质量微信小程序 UI 组件库",
+  "name": "iview-mpvue",
+  "version": "1.0.0",
+  "description": "高质量小程序 UI 组件库",
   "main": "app.js",
   "directories": {
     "example": "example"
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+ssh://git@github.com:iview/iview-weapp.git"
   },
-  "author": "Aresn",
+  "author": "Aresn, hucq, Dewyzee",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iview/iview-weapp/issues"
