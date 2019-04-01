@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div @click="handleTap" class="i-class i-cell">
+    <div @click="handleTap" class="i-class i-cell" v-bind:class="{'i-cell-last': isLastCell, 'i-cell-access': isLink}">
       <div class="i-cell-icon">
         <slot name="icon"></slot>
       </div>
@@ -11,7 +11,7 @@
       </div>
       <div @click.capture="navigateTo" class="i-cell-ft">
         <div v-if="value">{{ value }}</div>
-        <div v-else="">
+        <div v-else>
           <slot name="footer"></slot>
         </div>
       </div>
@@ -51,7 +51,33 @@ export default {
     url: {
       type: String,
       value: ''
+    },
+    isLastCell: {
+      type: Boolean,
+      value: false
     }
-  }
+  },
+  methods: {
+    navigateTo(evt) {
+      const navigateTypes = ['navigateTo', 'redirectTo', 'switchTab', 'reLaunch']
+      const url = this.url
+      const type = typeof this.isLink
+      this.$emit('click', evt)
+      if (type !== 'boolean' || type !== 'string') {
+        console.warn('isLink 属性必须是一个字符串或者布尔值', this.isLink)
+        return
+      }
+      if (!navigateTypes.includes(this.linkType)) {
+        console.warn('linkType 属性可选值为 navigateTo，redirectTo，switchTab，reLaunch', this.linkType)
+        return
+      }
+      mpvue[this.linkType].call(mpvue, { url })
+    },
+    handleTap() {
+      if (!this.onlyTapFooter) {
+        this.navigateTo()
+      }
+    }
+  },
 }
 </script>
