@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/index/main"],
+    "pages/index/main",
+    "pages/layout/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

@@ -1,0 +1,35 @@
+@import '../../common/_base.less';
+@import '../../common/_mixins.less';
+
+.i-panel {
+  position: relative;
+  overflow: hidden;
+
+  &-title{
+    font-size: @size-font-base;
+    line-height: 1;
+    color: @title-color;
+    padding: 20px 16px 10px;
+
+    &-hide-top{
+        padding-top: 0;
+    }
+  }
+
+  &-content{
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+    &::after {
+        .hairline();
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+    }
+  }
+
+  &-without-border{
+    &::after {
+        border: 0 none;
+    }
+  }
+}

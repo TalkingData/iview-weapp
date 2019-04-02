@@ -6,6 +6,7 @@ const path = require('path')
 const through2 = require('through2')
 const gulp = require('gulp')
 const destDir = getProjectPath('dist')
+const exampleDestDir = getProjectPath('examples/src')
 
 gulp.task('compile-css', done => {
   return gulp
@@ -31,6 +32,7 @@ gulp.task('compile-css', done => {
       })
     )
     .pipe(gulp.dest(destDir))
+    .pipe(gulp.dest(exampleDestDir))
 })
 
 gulp.task('compile-js', () => {
@@ -55,18 +57,21 @@ gulp.task('compile-js', () => {
       })
     )
     .pipe(gulp.dest(destDir))
+    .pipe(gulp.dest(exampleDestDir))
 })
 
 gulp.task('copy-static', () => {
   return gulp
     .src(['../assets/**/*.@(png|svg|jpg)'])
     .pipe(gulp.dest(path.join(destDir, 'assets')))
+    .pipe(gulp.dest(path.join(exampleDestDir, 'assets')))
 })
 
 gulp.task('copy-vue', () => {
   return gulp
     .src(['../src/components/**/*.vue'])
     .pipe(gulp.dest(path.join(destDir, 'components')))
+    .pipe(gulp.dest(path.join(exampleDestDir, 'components')))
 })
 
 gulp.task('auto', () => {
