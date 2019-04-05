@@ -1,0 +1,1 @@
+import './grid-label.less'

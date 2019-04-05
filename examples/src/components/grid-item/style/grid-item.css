@@ -1,0 +1,12 @@
+.i-grid-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  float: left;
+  padding: 20px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-right: 1rpx solid #e9eaec;
+  border-bottom: 1rpx solid #e9eaec;
+}

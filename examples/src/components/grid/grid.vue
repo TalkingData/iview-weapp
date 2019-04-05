@@ -1,8 +1,9 @@
 <template>
-  <div class="i-class i-row" v-bind:class="iClass">
+  <div class="i-class i-grid" v-bind:class="iClass">
     <slot></slot>
   </div>
 </template>
+
 <script>
 export default {
   props: {
@@ -10,10 +11,7 @@ export default {
       type: String,
       default: ''
     }
-  },
-  methods: {
-    
-  },
+  }
 }
 </script>
 

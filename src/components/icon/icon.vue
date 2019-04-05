@@ -1,33 +1,36 @@
 <template>
-  <div>
-    <div class="i-class i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}"></div>
-  </div>
+  <div class="i-class i-icon" v-bind:class="classObj" v-bind:style="{color: color, fontSize: size + 'px'}"></div>
 </template>
 <script>
 export default {
   props: {
     type: {
       type: String,
-      value: ''
+      default: ''
     },
     custom: {
       type: String,
-      value: ''
+      default: ''
     },
     size: {
       type: Number,
-      value: 14
+      default: 14
     },
     color: {
       type: String,
-      value: ''
+      default: ''
+    },
+    iClass: {
+      type: String,
+      default: ''
     }
   },
   computed: {
     classObj() {
       const iconType = this.type ? 'i-icon-' + this.type : ''
       const custom = this.custom ? this.custom : ''
-      return iconType + ' ' + custom
+      console.log(iconType)
+      return this.iClass + ' ' + iconType + ' ' + custom
     }
   },
 }

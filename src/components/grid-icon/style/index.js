@@ -1,0 +1,1 @@
+import './grid-icon.less'

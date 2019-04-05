@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/layout/main"],
+    "pages/layout/main",
+    "pages/grid/main",
+    "pages/panel/main",
+    "pages/list/main"],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

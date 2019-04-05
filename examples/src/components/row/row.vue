@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div class="i-class i-row" v-bind:class="iClass" @click="handleTap"><slot></slot></div>
+  <div class="i-class i-row" v-bind:class="iClass">
+    <slot></slot>
   </div>
 </template>
 <script>
@@ -12,9 +12,7 @@ export default {
     }
   },
   methods: {
-    handleTap(evt) {
-      this.$emit('click', evt)
-    }
+    
   },
 }
 </script>

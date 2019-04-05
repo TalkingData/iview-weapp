@@ -3,10 +3,10 @@
     <i-panel title="布局">
       <i-cell-group>
         <i-cell title="Layout 栅格布局" is-link="true" url="/pages/layout/main"></i-cell>
-        <i-cell title="Grid 宫格" is-link="true" url="/pages/grid/index"></i-cell>
-        <i-cell title="Panel 面板" is-link="true" url="/pages/panel/index"></i-cell>
-        <i-cell title="List 列表" is-link="true" url="/pages/list/index"></i-cell>
-        <i-cell title="Card 卡片" is-link="true" url="/pages/card/index"></i-cell>
+        <i-cell title="Grid 宫格" is-link="true" url="/pages/grid/main"></i-cell>
+        <i-cell title="Panel 面板" is-link="true" url="/pages/panel/main"></i-cell>
+        <i-cell title="List 列表" is-link="true" url="/pages/list/main"></i-cell>
+        <i-cell title="Card 卡片" is-link="true" url="/pages/card/main"></i-cell>
       </i-cell-group>
     </i-panel>
     <i-panel title="基础组件">
