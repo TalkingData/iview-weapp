@@ -19,7 +19,7 @@ Component({
             value: false
         },
         // 背景颜色
-        backgroundcolor: {
+        backgroundColor: {
             type: String,
             value: '#fefcec'
         },
