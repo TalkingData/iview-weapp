@@ -9,7 +9,7 @@
 ### 一套高质量的微信小程序 UI 组件库
 
 ## 文档
-[https://weapp.iviewui.com](https://weapp.iviewui.com)
+[http://inmap.talkingdata.com/wx/index_prod.html](http://inmap.talkingdata.com/wx/index_prod.html)
 
 ## 体验
 使用微信扫一扫体验小程序组件示例
