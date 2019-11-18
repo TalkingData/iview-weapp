@@ -47,7 +47,7 @@ Component({
             const { value = '' } = detail;
             this.setData({ value });
 
-            this.triggerEvent('change', event);
+            this.triggerEvent('input', event);
         },
 
         handleInputFocus(event) {
@@ -56,6 +56,10 @@ Component({
 
         handleInputBlur(event) {
             this.triggerEvent('blur', event);
+        },
+
+        handleInputConfirm(event){
+            this.triggerEvent('confirm', event);
         }
     }
 });
