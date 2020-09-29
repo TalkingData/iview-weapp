@@ -2,7 +2,7 @@
   "name": "iview-weapp",
   "version": "2.0.0",
   "description": "高质量微信小程序 UI 组件库",
-  "main": "app.js",
+  "miniprogram": "dist",
   "directories": {
     "example": "example"
   },
