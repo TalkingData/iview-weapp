@@ -4,7 +4,7 @@
     </i-notice-bar>
 </i-panel>
 <i-panel title="自定义颜色 通告栏">
-    <i-notice-bar backgroundcolor="#99cc66" color="#ffff66">
+    <i-notice-bar background-color="#99cc66" color="#ffff66">
         2018年世界杯,将于6月14日至7月15日举行
     </i-notice-bar>
 </i-panel>
