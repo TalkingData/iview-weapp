@@ -15,7 +15,11 @@ Component({
             type : String,
             //value has horizontal or vertical 
             value : 'horizontal'
-        } 
+        },
+        reverse : {
+            type : Boolean,
+            value : false
+        }
     },
     relations : {
         '../step/index' : {
@@ -41,7 +45,8 @@ Component({
                         len : len,
                         index : index,
                         current : this.data.current,
-                        direction : this.data.direction
+                        direction : this.data.direction,
+						reverse : this.data.reverse
                     });
                 });
             }
