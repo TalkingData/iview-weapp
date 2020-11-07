@@ -20,6 +20,10 @@ Component({
             type: String,
             value: ''
         },
+        placeholderStyle: {
+            type: String,
+            value: ''
+        },
         autofocus: {
             type: Boolean,
             value: false
