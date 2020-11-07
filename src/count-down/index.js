@@ -6,7 +6,7 @@ Component({
         format: Array,
         clearTimer: Boolean
     },
-    externalClasses: ['countdown-class'],
+    externalClasses: ['i-class'],
     data: {
         time: '',
         resultFormat: [],
