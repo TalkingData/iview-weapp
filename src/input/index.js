@@ -37,7 +37,8 @@ Component({
             value: false
         },
         maxlength: {
-            type: Number
+            type: Number,
+            value: 25
         }
     },
 
